@@ -1,11 +1,26 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./UI/Navbar";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Menu from "./Pages/Menu";
+import Contact from "./Pages/Contact";
+import Services from "./Pages/Services";
+import Error from "./Pages/Error";
 
 export default function App() {
   return (
-    <div className="text-center">
+    <div>
+      <BrowserRouter>
       <Navbar />
-      <h1 className='text-center font-bold pb-6 pt-6'>Hello World!!!</h1>
-      <button className="border px-8 py-2 cursor-pointer">CLICK ME</button>
+        <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="about" element={<About />}/>
+            <Route path="menu" element={<Menu />}/>
+            <Route path="contact" element={<Contact />}/>
+            <Route path="services" element={<Services />}/>
+            <Route path="*" element={<Error />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
