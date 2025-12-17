@@ -4,3 +4,7 @@ body{
     font-family: "Fredoka", sans-serif;
 }
 @custom-variant hover (&:hover);
+
+::-webkit-scrollbar{
+    overflow: hidden;
+}
