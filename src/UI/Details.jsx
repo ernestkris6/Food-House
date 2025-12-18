@@ -38,7 +38,7 @@ export default function Details() {
             <img
               src={hero}
               alt="About Bakehouse"
-              className="w-full hover:scale-110 transition-all duration-500 cursor-pointer  h-[320px] md:h-[420px] object-cover"
+              className="w-full hover:scale-110 transition-all duration-500 cursor-pointer h-[320px] md:h-[420px] object-cover"
             />
           </div>
         </div>

@@ -1,16 +1,25 @@
+import { useState } from 'react'
+import  { NavLink }  from 'react-router'
 import Logo from './Logo'
-import  { Link, NavLink }  from 'react-router'
-import bars from '../assets/menu_icon.svg'
+import menu from '../assets/menu_icon.svg'
+import cross from '../assets/cross_icon.png'
 
 //https://www.figma.com/design/YiTrqJ3LMiaxQzeRTAUZIw/65--Resturent-Website-templates--Community-?node-id=2065-10514&t=QDpn0QiXn02KKnPg-0
 
 export default function Navbar() {
+
+  const [ isOpen, setIsOpen ] = useState(false)
+
+  function handleOpen(){
+    setIsOpen((open) => !open )
+  }
+
   return (
     <header className='border-b-3 border-amber-400'>
         <nav className='flex justify-between'>
-                <Link to='/'>
+                <NavLink to='/'>
                     <Logo /> 
-                </Link>
+                </NavLink>
                 
                 <ul className='hidden md:flex space-x-8 pr-8 justify-center font-medium items-center'>
                   <li>
@@ -34,11 +43,29 @@ export default function Navbar() {
                     </NavLink>
                   </li>
                 </ul>    
-                {/* Mobile Menu */}
-                <div className='flex md:hidden pr-4'>
-                  <img className='w-7' src={bars} alt="jl" />
-                </div>               
         </nav>
+
+         {/*----------mobile menu----------*/}
+
+         <div className='absolute right-[18px] top-[28px] bottom-0 md:hidden'>
+          <img className={`${isOpen ? 'hidden' : 'block'} w-7 cursor-pointer`} src={menu} onClick={handleOpen} alt="" />
+        </div>
+       
+            <nav className={`${isOpen ? 'fixed w-1/2' : 'h-0 w-0'} lg:hidden right-0 top-0 bottom-0 z-20  overflow-hidden bg-amber-500/85 transition-all duration-500 ease-in-out`}>
+                  <div className='absolute right-[18px] top-[28px] bottom-0 md:hidden'>
+                    <img className={`${isOpen ? 'block' : 'hidden'} w-7 cursor-pointer`} src={cross} onClick={handleOpen} alt="" />
+                </div>
+                
+                {/*----------nav links----------*/}
+
+                  <ul className='flex flex-col text-white items-center gap-2 mt-5 text-lg font-medium'>
+                    <NavLink to='/' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>HOME</NavLink>
+                    <NavLink to='about' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>ABOUT</NavLink>
+                    <NavLink to='menu' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>MENU</NavLink>
+                    <NavLink to='services' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>SERVICES</NavLink>
+                    <NavLink to='contact' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>CONTACT</NavLink>
+                  </ul>
+            </nav>       
     </header>
   )
 }
