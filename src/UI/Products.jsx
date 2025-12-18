@@ -66,7 +66,7 @@ function Gallery ({src, alt, text}) {
 
 export default function Products() {
   return (
-    <div className='bg-[#E7f5f5] px-8 py-12'>
+    <div className='bg-[#E7f5f5] px-8 py-12 mb-6'>
         <div className='flex overflow-x-auto gap-4 snap-x snap-mandatory scrollbar-hide'>
             {imageDetails.map((item, idx)=> (
               <Gallery src={item.img} key={idx} text={item.text}/>

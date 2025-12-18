@@ -2,6 +2,7 @@ import Logo from './Logo'
 import  { Link, NavLink }  from 'react-router'
 import bars from '../assets/menu_icon.svg'
 
+//https://www.figma.com/design/YiTrqJ3LMiaxQzeRTAUZIw/65--Resturent-Website-templates--Community-?node-id=2065-10514&t=QDpn0QiXn02KKnPg-0
 
 export default function Navbar() {
   return (

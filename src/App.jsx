@@ -6,6 +6,7 @@ import Menu from "./Pages/Menu";
 import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import Error from "./Pages/Error";
+import Footer from "./UI/Footer";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="services" element={<Services />}/>
             <Route path="*" element={<Error />}/>
         </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   )
