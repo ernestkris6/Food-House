@@ -5,7 +5,7 @@ export default function Details() {
   return (
     <section className='mt-1'>
         <div className='bg-amber-500 text-center py-4'>
-            <p className='uppercase text-[#f3274c] text-xs md:text-lg'>About Foodhouse & confectioneries</p>
+            <p className='uppercase text-[#f3274c] text-xs md:text-lg'>About Bakehouse & confectioneries</p>
             <h2 className='text-lg md:text-3xl font-medium'>Perfect Place For An Exceptional</h2>
             <h2 className='text-lg md:text-3xl font-medium'>Experience</h2>
         </div>
