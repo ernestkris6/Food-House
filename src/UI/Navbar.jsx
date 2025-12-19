@@ -14,6 +14,7 @@ export default function Navbar() {
     setIsOpen((open) => !open )
   }
 
+
   return (
     <header className='border-b-3 border-amber-400'>
         <nav className='flex justify-between'>
@@ -53,7 +54,7 @@ export default function Navbar() {
   }`} src={menu} onClick={handleOpen} alt="" />
         </div>
        
-            <nav  className={`fixed top-0 right-0 h-[100dvh] w-1/2 md:hidden z-20 bg-amber-500/60 backdrop-blur transform transition-all duration-500 ease-in-out${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'}`}>
+            <nav  className={`fixed top-0 right-0 h-[100dvh] w-1/2 md:hidden z-20 bg-amber-500/60 backdrop-blur transform transition-all duration-500 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'}`}>
                   <div className='absolute right-[18px] top-[28px] bottom-0 md:hidden'>
                     <img className={`${isOpen ? 'block' : 'hidden'} w-7 cursor-pointer`} src={cross} onClick={handleOpen} alt="Close menu" />
                 </div>
@@ -61,11 +62,25 @@ export default function Navbar() {
                 {/*----------nav links----------*/}
 
                   <ul className='flex flex-col text-white items-center gap-2 mt-5 text-lg font-medium'>
-                    <NavLink to='/' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>HOME</NavLink>
-                    <NavLink to='about' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>ABOUT</NavLink>
-                    <NavLink to='menu' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>MENU</NavLink>
-                    <NavLink to='services' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>SERVICES</NavLink>
-                    <NavLink to='contact' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>CONTACT</NavLink>
+                    <li>
+                      <NavLink to='/' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>HOME</NavLink>
+                    </li>
+                    
+                    <li>
+                      <NavLink to='about' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>ABOUT</NavLink>
+                    </li>
+
+                    <li>
+                      <NavLink to='menu' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>MENU</NavLink>
+                    </li>
+
+                    <li>
+                      <NavLink to='services' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>SERVICES</NavLink>
+                    </li>
+                    
+                    <li>
+                      <NavLink to='contact' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>CONTACT</NavLink>
+                    </li>
                   </ul>
             </nav>       
     </header>
