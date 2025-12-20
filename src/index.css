@@ -21,8 +21,12 @@ body{
     animation: fade-up 1.8s ease-out forwards;
 }
 
+
 @custom-variant hover (&:hover);
 
 ::-webkit-scrollbar {
     overflow: hidden;
 }
+
+
+

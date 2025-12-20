@@ -335,17 +335,19 @@
 
 
 import { useEffect, useRef, useState } from "react";
+import image1 from '../assets/hero.jpg'
 
 const services = [
-  { title: "Native Meals", image: "/images/native.jpg" },
-  { title: "Continental Dishes", image: "/images/continental.jpg" },
-  { title: "Side Dishes", image: "/images/sides.jpg" },
-  { title: "Food Trays", image: "/images/trays.jpg" },
-  { title: "Food in Bowls", image: "/images/bowls.jpg" },
-  { title: "Food in Boxes", image: "/images/boxes.jpg" },
-  { title: "Snacks & Confectionery", image: "/images/snacks.jpg" },
-  { title: "Corporate & Event Catering", image: "/images/events.jpg" },
+  { name: "Native Meals", image: image1 },
+  { name: "Continental Dishes", image: image1 },
+  { name: "Side Dishes", image: image1 },
+  { name: "Food Trays", image: image1 },
+  { name: "Food in Bowls", image: image1 },
+  { name: "Food in Boxes", image: image1 },
+  { name: "Snacks & Confectionery", image: image1 },
+  { name: "Corporate & Event Catering", image: image1 },
 ];
+
 
 export default function ServicesDetails() {
   const sliderRef = useRef(null);
@@ -407,10 +409,7 @@ export default function ServicesDetails() {
                 <div className="absolute inset-0 bg-black/50" />
 
                 {/* Glass Card */}
-                <div className="absolute bottom-8 left-8 right-8 md:right-auto md:w-[420px]
-                                backdrop-blur-xl bg-white/10 border border-white/20
-                                rounded-2xl p-4 shadow-xl
-                                transition hover:bg-white/15">
+                <div className="absolute bottom-8 left-8 right-8 md:right-auto md:w-[420px] backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-4 shadow-xl transition hover:bg-white/15">
 
                   <h3 className="text-xl md:text-2xl font-medium">
                     {service.title}
@@ -420,8 +419,7 @@ export default function ServicesDetails() {
                     Premium quality, hygienic preparation, and stunning presentation.
                   </p>
 
-                  <button className="mt-5 bg-amber-500 hover:bg-amber-400 transition
-                                     text-black font-medium px-6 py-3 rounded-full text-sm">
+                  <button className="mt-5 bg-amber-500 hover:bg-amber-400 transition text-black font-medium px-8 py-2 rounded-full text-base">
                     Book Now
                   </button>
                 </div>
@@ -437,7 +435,7 @@ export default function ServicesDetails() {
             <button
               key={i}
               onClick={() => setIndex(i)}
-              className={`w-3 h-3 rounded-full transition ${
+              className={`w-2 h-2 rounded-full transition ${
                 index === i
                   ? "bg-amber-500 scale-110"
                   : "bg-white/40"

@@ -1,23 +1,24 @@
 import React from "react";
-import ServicesSlider from "./ServicesSlider";
+import image1 from '../assets/hero.jpg'
+
 
 const services = [
-  { name: "Native Meals", image: "/assets/native-meals.jpg" },
-  { name: "Continental Dishes", image: "/assets/continental.jpg" },
-  { name: "Side Dishes", image: "/assets/side-dishes.jpg" },
-  { name: "Food Trays", image: "/assets/food-trays.jpg" },
-  { name: "Food in Bowls", image: "/assets/food-bowls.jpg" },
-  { name: "Food in Boxes", image: "/assets/food-boxes.jpg" },
-  { name: "Snacks & Confectionery", image: "/assets/snacks.jpg" },
-  { name: "Corporate & Event Catering", image: "/assets/corporate.jpg" },
+  { name: "Native Meals", image: image1 },
+  { name: "Continental Dishes", image: image1 },
+  { name: "Side Dishes", image: image1 },
+  { name: "Food Trays", image: image1 },
+  { name: "Food in Bowls", image: image1 },
+  { name: "Food in Boxes", image: image1 },
+  { name: "Snacks & Confectionery", image: image1 },
+  { name: "Corporate & Event Catering", image: image1 },
 ];
 
 const ServicesPage = () => {
   return (
-    <div className="bg-gradient-to-b from-orange-50 via-white to-orange-50 min-h-screen">
+    <div className="bg-gradient-to-b from-amber-50 via-white to-amber-50 min-h-screen">
       <div className="container mx-auto px-6">
         {/* <ServicesSlider /> */}
-        <h1 className="text-lg mt-0 mb-2 pt-6 md:text-3xl font-medium text-center text-orange-600">
+        <h1 className="text-lg mt-0 mb-2 pt-6 md:text-3xl font-medium text-center text-amber-500">
           What we DO!
         </h1>
         
@@ -38,7 +39,7 @@ const ServicesPage = () => {
                 alt={service.name}
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute inset-0 bg-black/30 bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <h2 className="text-white text-xl md:text-2xl font-semibold text-center px-4">
                   {service.name}
                 </h2>
@@ -48,7 +49,7 @@ const ServicesPage = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <h2 className="text-3xl font-medium text-orange-600 mb-6">
+          <h2 className="text-3xl font-medium text-amber-500 mb-6">
             Perfect for Any Event
           </h2>
           <p className="text-gray-700 pb-8 max-w-2xl mx-auto">
