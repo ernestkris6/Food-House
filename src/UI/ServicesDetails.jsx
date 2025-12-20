@@ -19,7 +19,7 @@ const ServicesPage = () => {
       <div className="container mx-auto px-6">
         {/* <ServicesSlider /> */}
         <h1 className="text-lg mt-0 mb-2 pt-6 md:text-3xl font-medium text-center text-amber-500">
-          What we DO!
+          Explore Our Premium OFFERINGS!
         </h1>
         
         <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
@@ -52,11 +52,17 @@ const ServicesPage = () => {
           <h2 className="text-3xl font-medium text-amber-500 mb-6">
             Perfect for Any Event
           </h2>
-          <p className="text-gray-700 pb-8 max-w-2xl mx-auto">
+          <p className="text-gray-700 pb-2 max-w-2xl mx-auto">
             From corporate conferences to weddings, birthdays, launches, and picnics, we
             bring professional catering with delicious presentation and flavors that impress
             your guests every time.
           </p>
+         <div className="pt-4 pb-8 text-center">
+          <button className="inline-block uppercase bg-black text-white text-base md:text-lg px-8 py-2 cursor-pointer rounded-full hover:bg-gray-800 transition"
+          >
+            Contact us
+          </button>
+        </div>
         </div>
       </div>
     </div>

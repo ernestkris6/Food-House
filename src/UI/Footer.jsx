@@ -68,7 +68,7 @@ export default function Footer() {
                   Email: bakehousefoods.confectionery@gmail.com
                 </a>
               </li>
-              <li>Location: Onike, Yaba, Lagos</li>
+              <li>Location: Bodija, Ibadan.</li>
             </ul>
 
             {/* Social Icons */}
