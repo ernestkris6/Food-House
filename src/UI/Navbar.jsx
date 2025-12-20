@@ -22,7 +22,7 @@ export default function Navbar() {
                     <Logo /> 
                 </NavLink>
                 
-                <ul className='hidden md:flex space-x-8 pr-8 justify-center font-medium items-center'>
+                <ul className='hidden md:flex  text-gray-900 space-x-8 pr-8 justify-center font-medium items-center'>
                   <li>
                     <NavLink to='about'>
                       About

@@ -151,7 +151,7 @@ export default function ContactDetails() {
             href="https://wa.me/2348065292598"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-black text-white text-base px-8 py-1.5 rounded-full hover:bg-gray-800 transition"
+            className="inline-block bg-gray-900 text-white text-base px-8 py-1.5 rounded-full hover:bg-gray-800 transition"
           >
             Chat on WhatsApp
           </a>

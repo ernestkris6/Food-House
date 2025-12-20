@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* About */}
-          <div className="bg-[#f3274c] rounded-lg p-5 text-white/90 space-y-3">
+          <div className="bg-gray-900 rounded-lg p-5 text-white/90 space-y-3">
             <p className="text-sm leading-6">
               Thank you for joining us on this journey to inspire, empower,
               and elevate your everyday glam. We’re always here to ensure
@@ -39,15 +39,15 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">QUICK LINKS</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="hover:text-black/60">Home</Link></li>
-              <li><Link to="/about" className="hover:text-black/60">About</Link></li>
-              <li><Link to="/services" className="hover:text-black/60">Menu</Link></li>
-              <li><Link to="/works" className="hover:text-black/60">Services</Link></li>
-              <li><Link to="/contact" className="hover:text-black/60">Contact</Link></li>
+              <li><Link to="/about" className="hover:text-gray-900">About</Link></li>
+              <li><Link to="/services" className="hover:text-gray-900">Menu</Link></li>
+              <li><Link to="/works" className="hover:text-gray-900">Services</Link></li>
+              <li><Link to="/contact" className="hover:text-gray-900">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact + Social */}
-          <div>
+          <div className="text-gray-900">
             <h4 className="font-semibold mb-4">CONTACT</h4>
             <ul className="space-y-2 text-sm">
               <li>
@@ -55,7 +55,7 @@ export default function Footer() {
                   href="https://wa.me/+2348030769110"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-black/60"
+                  className="hover:text-gray-900"
                 >
                   WhatsApp: +234 803 076 9110
                 </a>
@@ -63,7 +63,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:bakehousefoods.confectionery@gmail.com"
-                  className="hover:text-black/60"
+                  className="hover:text-gray/60"
                 >
                   Email: bakehousefoods.confectionery@gmail.com
                 </a>
@@ -105,7 +105,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <hr className="my-8 border-black/20" />
+        <hr className="my-8 border-gray-900" />
 
         {/* Copyright */}
         <p className="text-center text-xs">
@@ -163,7 +163,7 @@ export default function Footer() {
 //           <div>
 //             <h4 className="font-semibold mb-4">QUICK LINKS</h4>
 //             <ul className="space-y-2 text-sm">
-//               <li><Link to="/" className="hover:text-black/60">Home</Link></li>
+//               <li><Link to="/" className="hover:text-gray-900">Home</Link></li>
 //               <li><Link to="/about" className="hover:text-black/60">About</Link></li>
 //               <li><Link to="/services" className="hover:text-black/60">Menu</Link></li>
 //               <li><Link to="/works" className="hover:text-black/60">Services</Link></li>

@@ -6,8 +6,7 @@ body{
 }
 
 .active {
-  @apply block text-amber-500;
-  @apply underline
+  @apply block text-gray-900;
 }
 
 /*Animations*/
