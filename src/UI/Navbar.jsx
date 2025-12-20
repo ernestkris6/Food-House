@@ -38,11 +38,16 @@ export default function Navbar() {
                       Services
                     </NavLink>
                   </li>
-                  <li className='bg-amber-400 px-8 py-3 rounded text-white ml-4 cursor-pointer hover:bg-amber-300 font-medium'>
+                  {/* <li className='bg-amber-400 px-8 py-3 rounded text-white ml-4 cursor-pointer hover:bg-amber-300 font-medium'>
                     <NavLink to='contact'>
                       Contact Us
                     </NavLink>
-                  </li>
+                  </li> */}
+
+                  <NavLink to='contact'>
+                     <button className='bg-amber-400 px-8 py-3 rounded text-white ml-4 cursor-pointer hover:bg-amber-300 font-medium'> Contact Us</button>
+                  </NavLink>
+
                 </ul>    
         </nav>
 

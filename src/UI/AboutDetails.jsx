@@ -1,3 +1,5 @@
+import image1 from '../assets/image1.jpg'
+
 export default function AboutDetails() {
   return (
     <section className="bg-neutral-950 text-white">
@@ -5,7 +7,7 @@ export default function AboutDetails() {
       {/* HERO */}
       <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <img
-          src="/images/about-hero.jpg"
+          src={image1}
           alt="About us"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -39,7 +41,7 @@ export default function AboutDetails() {
 
         <div className="relative h-[380px] rounded-3xl overflow-hidden shadow-2xl">
           <img
-            src="/images/about-kitchen.jpg"
+            src={image1}
             alt="Our kitchen"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -76,7 +78,9 @@ export default function AboutDetails() {
       </div>
 
       {/* WHY CHOOSE US */}
-      <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 className="text-center text-3xl font-semibold pt-6 mb-2">Why Choose Us</h2>
+      <div className="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-3 gap-10">
         {[
           { title: "Quality & Hygiene", desc: "Prepared with the highest hygiene standards and fresh ingredients." },
           { title: "Professional Service", desc: "Timely delivery and courteous, professional handling." },
@@ -96,6 +100,7 @@ export default function AboutDetails() {
         ))}
       </div>
 
+      </div>
       {/* EVENTS */}
       <div className="relative py-24 overflow-hidden">
         <img

@@ -5,6 +5,11 @@ body{
     overscroll-behavior-y: none;
 }
 
+.active {
+  @apply block text-amber-500;
+  @apply underline
+}
+
 /*Animations*/
 @keyframes fade-up {
     from {

@@ -122,19 +122,26 @@
 
 
 import { useEffect, useRef, useState } from "react";
-import image1 from '../assets/hero.jpg'
+import image1 from '../assets/image1.jpg'
+import image2 from '../assets/image2.jpg'
+import image3 from '../assets/image3.jpg'
+import image4 from '../assets/image4.jpg'
+import image5 from '../assets/image5.jpg'
+import image6 from '../assets/image6.jpg'
+import image7 from '../assets/image7.jpg'
+import image8 from '../assets/image8.jpg'
+
 
 const services = [
   { name: "Native Meals", image: image1 },
-  { name: "Continental Dishes", image: image1 },
-  { name: "Side Dishes", image: image1 },
-  { name: "Food Trays", image: image1 },
-  { name: "Food in Bowls", image: image1 },
-  { name: "Food in Boxes", image: image1 },
-  { name: "Snacks & Confectionery", image: image1 },
-  { name: "Corporate & Event Catering", image: image1 },
+  { name: "Continental Dishes", image: image2 },
+  { name: "Side Dishes", image: image3 },
+  { name: "Food Trays", image: image4 },
+  { name: "Food in Bowls", image: image5 },
+  { name: "Food in Boxes", image: image6 },
+  { name: "Snacks & Confectionery", image: image7 },
+  { name: "Corporate & Event Catering", image: image8 },
 ];
-
 
 export default function ServicesDetails() {
   const sliderRef = useRef(null);
@@ -169,7 +176,7 @@ export default function ServicesDetails() {
           <h2 className="text-3xl md:text-4xl font-medium">
             Our Services
           </h2>
-          <p className="mt-4 text-white/70 max-w-2xl mx-auto">
+          <p className="mt-4 text-white/70 text-base md:text-lg max-w-2xl mx-auto">
             Crafted meals and premium catering experiences for every occasion.
           </p>
         </div>
