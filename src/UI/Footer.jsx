@@ -50,7 +50,7 @@ export default function Footer() {
 
             </div>
         </div>
-            <hr className='mt-2' />
+            <hr className='mt-2 text-amber-500' />
         <p className="text-center pt-3 pb-[-12px] text-[12px]">Copyright &copy; Bakehouse Foods 2025</p>
     </footer>
   )
