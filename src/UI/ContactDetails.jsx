@@ -3,35 +3,35 @@ import { FiMapPin, FiMail, FiPhone,FiInstagram, FiFacebook, FiLinkedin } from "r
 
 export default function ContactDetails() {
   return (
-    <section className="bg-[#fafafa] py-16 md:py-24">
+    <section className="bg-[#fafafa] py-12 md:py-6">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 md:mb-8">
           <h1 className="text-3xl md:text-4xl font-semibold text-gray-900">
             Get in Touch
           </h1>
-          <p className="mt-4 text-gray-600 max-w-xl mx-auto">
+          <p className="mt-4 md:mt-2 text-gray-600 max-w-xl mx-auto">
             Have a question, booking request, or custom inquiry?  
             We’d love to hear from you.
           </p>
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-6  md:space-y-2">
             <div>
               <h3 className="text-xl font-semibold text-gray-900">
                 Contact Information
               </h3>
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-600 mt-4 md:mt-1">
                 Reach out via phone, email, or visit us at our location.
               </p>
             </div>
 
-            <div className="space-y-5">
+            <div className="space-y-3">
               <div className="flex items-start gap-4">
                 <FiPhone className="text-amber-500 text-xl mt-1" />
                 <div>
@@ -95,15 +95,15 @@ export default function ContactDetails() {
           
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <form className="space-y-6">
+          <div className="bg-white rounded-2xl shadow-lg mt-8 md:mt-0 p-6">
+            <form className="space-y-3">
               <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Full Name
                 </label>
                 <input
                   type="text"
-                  className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
+                  className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-1 focus:border-amber-500 focus:ring-amber-500 outline-none"
                   placeholder="Your name"
                 />
               </div>
@@ -114,7 +114,7 @@ export default function ContactDetails() {
                 </label>
                 <input
                   type="email"
-                  className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
+                  className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-1 focus:border-amber-500 focus:ring-amber-500 outline-none"
                   placeholder="you@example.com"
                 />
               </div>
@@ -125,7 +125,7 @@ export default function ContactDetails() {
                 </label>
                 <textarea
                   rows="4"
-                  className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
+                  className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-0.5 focus:border-amber-500 focus:ring-amber-500 outline-none"
                   placeholder="Tell us how we can help..."
                 />
               </div>
@@ -133,7 +133,7 @@ export default function ContactDetails() {
               <button
                 type="submit"
                 onClick={(e) =>e.preventDefault()}
-                className="w-full bg-amber-500 cursor-pointer hover:bg-amber-400 transition-colors text-white font-medium py-3 rounded-lg"
+                className="w-full bg-amber-500 cursor-pointer hover:bg-amber-400 transition-colors text-white text-base font-medium py-1 rounded-lg"
               >
                 Send Message
               </button>
@@ -143,15 +143,15 @@ export default function ContactDetails() {
         </div>
 
         {/* CTA */}
-        <div className="mt-20 text-center">
-          <p className="text-gray-700 mb-4">
+        <div className="mt-10 md:mt-8 text-center">
+          <p className="text-base text-gray-700 mb-2">
             Prefer instant response?
           </p>
           <a
             href="https://wa.me/2348065292598"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition"
+            className="inline-block bg-black text-white text-base px-8 py-1.5 rounded-full hover:bg-gray-800 transition"
           >
             Chat on WhatsApp
           </a>
