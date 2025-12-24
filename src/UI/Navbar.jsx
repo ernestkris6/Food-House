@@ -79,7 +79,7 @@ export default function Navbar() {
         {/* -------- Overlay (click to close) -------- */}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black/5 z-10 md:hidden"
+            className="fixed inset-0 bg-black/10 z-10 md:hidden"
             onClick={() => setIsOpen(false)}
           />
         )}
@@ -96,23 +96,23 @@ export default function Navbar() {
 
                   <ul className='flex flex-col text-white items-center gap-2 mt-5 text-lg font-medium'>
                     <li>
-                      <NavLink to='/' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>HOME</NavLink>
+                      <NavLink to='/' className='hover:bg-[#13044e]/80 text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>HOME</NavLink>
                     </li>
                     
                     <li>
-                      <NavLink to='about' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>ABOUT</NavLink>
+                      <NavLink to='about' className='hover:bg-[#13044e]/80 text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>ABOUT</NavLink>
                     </li>
 
                     <li>
-                      <NavLink to='menu' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>MENU</NavLink>
+                      <NavLink to='menu' className='hover:bg-[#13044e]/80 active:text-white text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>MENU</NavLink>
                     </li>
 
                     <li>
-                      <NavLink to='services' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>SERVICES</NavLink>
+                      <NavLink to='services' className='hover:bg-[#13044e]/80 text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>SERVICES</NavLink>
                     </li>
                     
                     <li>
-                      <NavLink to='contact' className='hover:bg-[#f3274c] text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>CONTACT</NavLink>
+                      <NavLink to='contact' className='hover:bg-[#13044e]/80 text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>CONTACT</NavLink>
                     </li>
                   </ul>
             </nav>       

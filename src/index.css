@@ -5,8 +5,26 @@ body{
     overscroll-behavior-y: none;
 }
 
-.active {
-  @apply block text-gray-900;
+/* .active {
+  @apply block text-amber-500;
+} */
+
+/* Desktop only */
+@media (min-width: 768px) {
+  .active {
+    color: #FBBF4b;
+    font-weight:500
+  }
+}
+
+/* Mobile override */
+@media (max-width: 767px) {
+  .active {
+    color: inherit;
+    font-weight: normal;
+    /* background-color: rgba(0, 0, 11, 0.6);; */
+    
+  }
 }
 
 /*Animations*/
