@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuDetails from '../UI/MenuSlider'
+import MenuDetails from '../UI/MenuDetails'
 
 export default function Menu() {
   return (

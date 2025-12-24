@@ -104,7 +104,7 @@ export default function Navbar() {
                     </li>
 
                     <li>
-                      <NavLink to='menu' className='hover:bg-[#13044e]/80 active:text-white text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>MENU</NavLink>
+                      <NavLink to='menu' className='hover:bg-[#13044e]/80 text-white px-4 py-2 rounded inline-block' onClick={handleOpen}>MENU</NavLink>
                     </li>
 
                     <li>

@@ -20,7 +20,7 @@ body{
 /* Mobile override */
 @media (max-width: 767px) {
   .active {
-    color: #13044e;
+    color: #E7f5f5;
     /* font-weight: normal; */
     /* background-color: rgba(0, 0, 11, 0.6);; */
     
