@@ -17,6 +17,8 @@ export default function Navbar() {
 
   useEffect(function(){
     function handleOutsideClick(e) {
+
+      //if (menu is open AND click is outside menu) close menu
       if (isOpen && menuRef.current && !menuRef.current.contains(e.target)) {
         setIsOpen(false)
       }
@@ -77,7 +79,7 @@ export default function Navbar() {
         {/* -------- Overlay (click to close) -------- */}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black/80 z-10 md:hidden"
+            className="fixed inset-0 bg-black/5 z-10 md:hidden"
             onClick={() => setIsOpen(false)}
           />
         )}
