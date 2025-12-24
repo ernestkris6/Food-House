@@ -13,7 +13,7 @@ const { ref, isVisible } = useRevealOnScroll();
       {/* ================= SUBSCRIBE ================= */}
       <div ref={ref} className="px-6 md:px-16 py-20 bg-gradient-to-r from-amber-700 to-amber-500 text-black">
         <div className={`
-        transition-all duration-700 ease-out
+        transition-all duration-1000 ease-out
         ${isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-10"} max-w-3xl mx-auto text-center`}>
