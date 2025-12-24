@@ -11,7 +11,7 @@ const { ref, isVisible } = useRevealOnScroll();
     <section className="w-full">
 
       {/* ================= SUBSCRIBE ================= */}
-      <div ref={ref} className="px-6 md:px-16 py-20 bg-gradient-to-r from-amber-700 to-amber-500 text-black">
+      <div ref={ref} className="px-6 md:px-16 py-20 bg-gradient-to-r from-amber-700 to-amber-500 text-black/80">
         <div className={`
         transition-all duration-10000 ease-out
         ${isVisible
@@ -28,7 +28,7 @@ const { ref, isVisible } = useRevealOnScroll();
             <button className="px-8 py-3 rounded-full bg-black text-white hover:opacity-90 transition">
               Order Now
             </button>
-            <button className="px-8 py-3 rounded-full border border-black hover:bg-black hover:text-white transition">
+            <button className="px-8 py-3 rounded-full border border-black/80 hover:bg-black hover:text-white transition">
               Chat on WhatsApp
             </button>
           </div>

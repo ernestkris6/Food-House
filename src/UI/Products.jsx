@@ -18,7 +18,22 @@ const images = [
     id: 2,
     img: image10,
     alt: 'image 10'
-  }
+  },
+  {
+    id: 1,
+    img: image9,
+    alt: 'image 9'
+  },
+  {
+    id: 1,
+    img: image9,
+    alt: 'image 9'
+  },
+  {
+    id: 1,
+    img: image9,
+    alt: 'image 9'
+  },
 ]
 
 export default function Products() {
@@ -29,7 +44,7 @@ export default function Products() {
           Featured Dishes
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {images.map((item, i) => (
             <div
               key={i}
