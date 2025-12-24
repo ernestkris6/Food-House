@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import  { NavLink }  from 'react-router'
 import Logo from './Logo'
 import menu from '../assets/menu_icon.svg'
@@ -9,10 +9,27 @@ import cross from '../assets/cross_icon.png'
 export default function Navbar() {
 
   const [ isOpen, setIsOpen ] = useState(false)
+  const menuRef = useRef(null)
 
   function handleOpen(){
     setIsOpen((open) => !open )
   }
+
+  useEffect(function(){
+    function handleOutsideClick(e) {
+      if (isOpen && menuRef.current && !menuRef.current.contains(e.target)) {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleOutsideClick)
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick)
+    }
+  }, [isOpen])
+
+  
 
 
   return (
@@ -51,15 +68,24 @@ export default function Navbar() {
                 </ul>    
         </nav>
 
-         {/*----------mobile menu----------*/}
 
+          {/* -------- Hamburger Icon -------- */}
          <div className='absolute right-[18px] top-[28px] bottom-0 md:hidden'>
-          <img className={`w-7 cursor-pointer md:hidden transition-opacity duration-300 ${
-    isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
-  }`} src={menu} onClick={handleOpen} alt="" />
+          <img className={`w-7 cursor-pointer md:hidden transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} src={menu} onClick={handleOpen} alt="" />
         </div>
+
+        {/* -------- Overlay (click to close) -------- */}
+        {isOpen && (
+          <div
+            className="fixed inset-0 bg-black/30 z-10 md:hidden"
+            onClick={() => setIsOpen(false)}
+          />
+        )}
        
-            <nav  className={`fixed top-0 right-0 h-[100dvh] w-1/2 md:hidden z-20 bg-amber-500/60 backdrop-blur transform transition-all duration-500 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'}`}>
+         {/*----------mobile menu----------*/}
+            <nav 
+            ref={menuRef} 
+            className={`fixed top-0 right-0 h-[100dvh] w-1/2 md:hidden z-20 bg-amber-500/60 backdrop-blur transform transition-all duration-500 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'}`}>
                   <div className='absolute right-[18px] top-[28px] bottom-0 md:hidden'>
                     <img className={`${isOpen ? 'block' : 'hidden'} w-7 cursor-pointer`} src={cross} onClick={handleOpen} alt="Close menu" />
                 </div>
