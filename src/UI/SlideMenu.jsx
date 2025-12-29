@@ -1,7 +1,7 @@
 import React from 'react'
 import image12 from '../assets/image12.jpg'
 import image13 from '../assets/image13.jpg'
-import image14 from '../assets/image14.jpg'
+import image7 from '../assets/image7.jpg'
 import image15 from '../assets/image15.jpg'
 import image16 from '../assets/image16.jpg'
 import image17 from '../assets/image17.jpg'
@@ -12,38 +12,38 @@ const slide = [
         id: 0,
         img: image12,
         alt: "",
-        desc: "Delicious meals"
+        desc: "Stir fry pasta with veggies & beef"
     },
     {
         id: 1,
         img: image13,
         alt: "",
-        desc: "Delicious meals"
+        desc: `Native "ewa agoin" with yam`
     },
     {
         id: 2,
-        img: image14,
+        img: image7,
         alt: "",
-        desc: "Delicious meals"
+        desc: "Chicken shawarma"
 
     },
     {
         id: 3,
         img: image15,
         alt: "",
-        desc: "Delicious meals"
+        desc: "Bread sandwich"
     },
     {
         id: 4,
         img: image16,
         alt: "",
-        desc: "Delicious meals"
+        desc: "Waffles and eggs with baked beans"
     },
     {
         id: 5,
         img: image17,
         alt: "",
-        desc: "Delicious meals"
+        desc: "Basmati jollof & fried rice"
     }
 ]
 

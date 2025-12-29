@@ -126,10 +126,10 @@ import image1 from '../assets/image1.jpg'
 import image2 from '../assets/image2.jpg'
 import image3 from '../assets/image3.jpg'
 import image4 from '../assets/image4.jpg'
-import image5 from '../assets/image5.jpg'
-import image6 from '../assets/image6.jpg'
-import image7 from '../assets/image7.jpg'
-import image8 from '../assets/image8.jpg'
+// import image5 from '../assets/image5.jpg'
+// import image6 from '../assets/image6.jpg'
+// import image7 from '../assets/image7.jpg'
+// import image8 from '../assets/image8.jpg'
 
 
 const services = [
@@ -137,10 +137,10 @@ const services = [
   { name: "Continental Dishes", image: image2 },
   { name: "Side Dishes", image: image3 },
   { name: "Food Trays", image: image4 },
-  { name: "Food in Bowls", image: image5 },
-  { name: "Food in Boxes", image: image6 },
-  { name: "Snacks & Confectionery", image: image7 },
-  { name: "Corporate & Event Catering", image: image8 },
+  // { name: "Food in Bowls", image: image5 },
+  // { name: "Food in Boxes", image: image6 },
+  // { name: "Snacks & Confectionery", image: image7 },
+  // { name: "Corporate & Event Catering", image: image8 },
 ];
 
 export default function ServicesDetails() {
@@ -154,7 +154,7 @@ export default function ServicesDetails() {
 
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % services.length);
-    }, 4500);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, [isPaused]);
@@ -172,7 +172,7 @@ export default function ServicesDetails() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center pt-4 mb-14">
           <h2 className="text-3xl md:text-4xl font-medium">
             Our Services
           </h2>

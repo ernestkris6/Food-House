@@ -1,38 +1,53 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import image6 from '../assets/image6.jpg'
 import image8 from '../assets/image8.jpg'
 import image9 from '../assets/image9.jpg'
 import image10 from '../assets/image10.jpg'
+import image5 from '../assets/image5.jpg'
 
 const images = [
   {
     id: 0,
-    img: image8,
-    alt: 'image 8'
+    img: image6,
+    alt: 'image 8',
+    text: "Pies",
+    desc: "Meat & Chicken Pie",
   },
   {
     id: 1,
-    img: image9,
-    alt: 'image 9'
+    img: image8,
+    alt: 'image 9',
+    text: " Finger Foods",
+    desc: "Beef Stick Meats",
   },
   {
     id: 2,
     img: image10,
-    alt: 'image 10'
+    alt: 'image 10',
+    text: "Quick Breakfast",
+    desc: "Pancakes & Scrambled Eggs",
   },
   {
-    id: 1,
+    id: 3,
     img: image9,
-    alt: 'image 9'
+    alt: 'image 9',
+    text: "Native meals",
+    desc: "Moimoi",
   },
   {
-    id: 1,
-    img: image9,
-    alt: 'image 9'
+    id: 4,
+    img: image5,
+    alt: 'image 9',
+    text: "Yamarita",
+    desc: "Yam with mushroom veggies & sauce",
   },
   {
-    id: 1,
+    id: 5,
     img: image9,
-    alt: 'image 9'
+    alt: 'image 9',
+    text: "Native Soups",
+    desc: "Classic Efo-riro with ponmo and assorted offals",
   },
 ]
 
@@ -40,30 +55,38 @@ export default function Products() {
   return (
     <div>
       <section className="px-6 md:px-16 py-20 bg-white/20">
-        <h2 className="text-3xl font-semibold mb-10 text-center">
-          Featured Dishes
+        <h2 className="text-3xl font-medium mb-10 text-center">
+          Top Trending Dishes
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           {images.map((item, i) => (
             <div
               key={i}
-              className="rounded-xl overflow-hidden hover:shadow-xl transition"
+              className="rounded-xl overflow-hidden shadow-2xl transition"
             >
               <img
                 src={item.img}
-                alt="Featured dish"
-                className="h-72 w-full object-cover"
+                alt={item.alt}
+                className="w-full h-36 lg:h-72 object-cover"
               />
-              <div className="p-4 bg-black/60">
-                <h4 className="font-semibold">Chef’s Special</h4>
-                <p className="text-sm text-gray-300">
-                  Available for events & bulk orders
+              <div className="p-2 bg-black/60">
+                <h4 className="font-semibold">{item.text}</h4>
+                <p className="text-xs md:text-sm text-gray-300">
+                  {item.desc}
                 </p>
               </div>
             </div>
           ))}
         </div>
+      <div className='text-center'>
+       <p onClick={() => scrollTo(0,0)}>
+         <Link to='menu'>
+          <button 
+            className='bg-[#f3274c] mt-24 text-white text-center px-8 py-3 rounded cursor-pointer hover:bg-black/60 hover:transition-all duration-500'>Explore More</button>
+        </Link>
+       </p>
+      </div>
       </section>
 
       {/* ================= EVENTS & CATERING ================= */}

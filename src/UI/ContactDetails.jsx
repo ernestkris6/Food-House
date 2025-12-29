@@ -3,7 +3,7 @@ import { FiMapPin, FiMail, FiPhone,FiInstagram, FiFacebook, FiLinkedin } from "r
 
 export default function ContactDetails() {
   return (
-    <section className="bg-[#fafafa] py-12 md:py-6">
+    <section className="bg-[#fafafa] py-12">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}

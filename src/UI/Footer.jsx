@@ -38,11 +38,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">QUICK LINKS</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-black/60">Home</Link></li>
-              <li><Link to="/about" className="hover:text-gray-900">About</Link></li>
-              <li><Link to="/services" className="hover:text-gray-900">Menu</Link></li>
-              <li><Link to="/works" className="hover:text-gray-900">Services</Link></li>
-              <li><Link to="/contact" className="hover:text-gray-900">Contact</Link></li>
+              <li onClick={()=> scrollTo(0,0)}><Link to="/" className="hover:text-black/60">Home</Link></li>
+              <li onClick={()=> scrollTo(0,0)}><Link to="/about" className="hover:text-gray-900">About</Link></li>
+              <li onClick={()=> scrollTo(0,0)}><Link to="/menu" className="hover:text-gray-900">Menu</Link></li>
+              <li onClick={()=> scrollTo(0,0)}><Link to="/services" className="hover:text-gray-900">Services</Link></li>
+              <li onClick={()=> scrollTo(0,0)}><Link to="/contact" className="hover:text-gray-900">Contact</Link></li>
             </ul>
           </div>
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import image1 from '../assets/image1.jpg'
 
 export default function AboutDetails() {
@@ -11,7 +12,7 @@ export default function AboutDetails() {
           alt="About us"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
@@ -129,10 +130,13 @@ export default function AboutDetails() {
         <p className="mt-4 text-white/70">
           Experience premium meals and outstanding service tailored just for you.
         </p>
-        <button className="mt-8 bg-amber-500 hover:bg-amber-400 transition
-                           text-black font-medium cursor-pointer px-8 py-1.5 md:py-2  rounded-full">
+        <p onClick={() => scrollTo(0,0)}>
+          <Link to='/services'>
+            <button className="mt-8 bg-amber-500 hover:bg-amber-400 transition text-black font-medium cursor-pointer px-8 py-1.5 md:py-2  rounded-full">
           What We Offer
         </button>
+          </Link>
+        </p>
       </div>
 
     </section>

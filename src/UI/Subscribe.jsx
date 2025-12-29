@@ -8,7 +8,7 @@ export default function SubscribeOrder() {
 const { ref, isVisible } = useRevealOnScroll();
     
   return (
-    <section className="w-full">
+    <section className="w-full mt-[-4px]">
 
       {/* ================= SUBSCRIBE ================= */}
       <div ref={ref} className="px-6 md:px-16 py-20 bg-gradient-to-r from-amber-700 to-amber-500 text-black/80">
@@ -25,10 +25,10 @@ const { ref, isVisible } = useRevealOnScroll();
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 rounded-full bg-black text-white hover:opacity-90 transition">
+            <button className="px-8 py-3 rounded-full bg-black text-white hover:opacity-90 transition-all duration-500 cursor-pointer">
               Order Now
             </button>
-            <button className="px-8 py-3 rounded-full border border-black/80 hover:bg-black hover:text-white transition">
+            <button className="px-8 py-3 rounded-full border border-black/80 hover:bg-black hover:text-white transition-all duration-500 cursor-pointer">
               Chat on WhatsApp
             </button>
           </div>
