@@ -24,13 +24,10 @@ export default function Footer() {
           {/* About */}
           <div className="bg-gray-900 rounded-lg p-5 text-white/90 space-y-3">
             <p className="text-sm leading-6">
-              Thank you for joining us on this journey to inspire, empower,
-              and elevate your everyday glam. We’re always here to ensure
-              your beauty shines.
+              Bakehouse Food & Confectionery delivers exquisite meals that bring class, flavour, and satisfaction to every celebration.
             </p>
             <p className="text-sm italic">
-              “Feel free to express your true self with Glam by La Sauce.
-              Your glam, your story.”
+              “From native delicacies to continental cuisine, we serve food that tells a story of excellence.”
             </p>
           </div>
 

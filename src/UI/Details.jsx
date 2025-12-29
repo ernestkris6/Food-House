@@ -28,12 +28,12 @@ export default function Details() {
             Get to Know Us
           </h2>
 
-          <p className="text-gray-700 text-xs md:text-base leading-relaxed mb-3">
+          <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-3">
             At <span className="font-medium">Bakehouse Food & Confectionery</span>,
             we create meals that combine taste, elegance, and quality.
           </p>
 
-          <p className="text-gray-700 text-xs md:text-base leading-relaxed mb-4">
+          <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
             From daily meals to special events, every dish is prepared to impress.
           </p>
 
@@ -42,9 +42,9 @@ export default function Details() {
             onClick={()=> scrollTo(0,0)}
             className="
               bg-gradient-to-r from-amber-700 to-amber-500
-              text-white text-xs md:text-sm
-              px-4 py-1 md:px-6 md:py-2
-              rounded-full cursor-pointer    font-extralight
+              text-white text-sm md:text-base
+              px-6 py-2 md:px-8 md:py-3
+              rounded-full cursor-pointer    font-light
               hover:opacity-90 transition
             "
           >
