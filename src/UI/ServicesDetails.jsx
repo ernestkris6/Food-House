@@ -26,7 +26,7 @@ const ServicesPage = () => {
     <div className="bg-gradient-to-b from-amber-50 via-white to-amber-50 min-h-screen">
       <div className="container mx-auto px-6">
         {/* <ServicesSlider /> */}
-        <h1 className="text-lg mt-0 mb-2 pt-6 md:text-3xl font-medium text-center text-amber-500">
+        <h1 className="text-lg mt-8 mb-2 py-6 md:text-3xl font-medium text-center text-amber-500">
           Explore Our Premium OFFERINGS!
         </h1>
         

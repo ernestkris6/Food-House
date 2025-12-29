@@ -143,8 +143,8 @@ export default function ContactDetails() {
         </div>
 
         {/* CTA */}
-        <div className="mt-10 md:mt-8 text-center">
-          <p className="text-base text-gray-700 mb-2">
+        <div className="mt-12 md:mt-18 md:mb-12 text-center">
+          <p className="text-base text-gray-700 my-2">
             Prefer instant response?
           </p>
           <a

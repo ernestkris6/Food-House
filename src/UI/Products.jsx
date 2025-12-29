@@ -5,6 +5,7 @@ import image8 from '../assets/image8.jpg'
 import image9 from '../assets/image9.jpg'
 import image10 from '../assets/image10.jpg'
 import image5 from '../assets/image5.jpg'
+import image11 from '../assets/image11.jpg'
 
 const images = [
   {
@@ -44,7 +45,7 @@ const images = [
   },
   {
     id: 5,
-    img: image9,
+    img: image11,
     alt: 'image 9',
     text: "Native Soups",
     desc: "Classic Efo-riro with ponmo and assorted offals",

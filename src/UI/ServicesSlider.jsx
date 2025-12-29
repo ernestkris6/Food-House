@@ -200,7 +200,7 @@ export default function ServicesDetails() {
                 />
 
                 {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-black/30" />
 
                 {/* Glass Card */}
                 <div className="absolute bottom-8 left-8 right-8 md:right-auto md:w-[420px] backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-4 shadow-xl transition hover:bg-white/15">

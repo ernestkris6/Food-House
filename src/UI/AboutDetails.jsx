@@ -125,7 +125,7 @@ export default function AboutDetails() {
       {/* CTA */}
       <div className="bg-neutral-900 py-20 text-center">
         <h2 className="text-3xl font-semibold">
-          Let’s Cater Your Next Event
+          Let’s Handle Your Next Event
         </h2>
         <p className="mt-4 text-white/70">
           Experience premium meals and outstanding service tailored just for you.
