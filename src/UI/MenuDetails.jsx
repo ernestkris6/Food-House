@@ -69,7 +69,7 @@ export default function MenuPage() {
       </section>
 
       <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semimedium">
-        <a href="#native" className="hover:text-amber-700">Native</a>
+        <a href="#native" className="hover:text-amber-700 active:text-amber-900">Native</a>
         <a href="#continental" className="hover:text-amber-700">Continental</a>
         <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
         {/* <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a> */}
@@ -86,7 +86,7 @@ export default function MenuPage() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {foods.native.map((item) => (
             <div key={item.name} className="bg-white rounded-xl shadow group relative overflow-hidden">
-              <img src={item.img} className="h-48 md:h-72 w-full object-cover rounded-t-xl group relative rounded group-hover:scale-105 transition-transform duration-500 overflow-hidden" />
+              <img src={item.img} className="h-48 md:h-72 w-full object-cover rounded-t-xl group relative group-hover:scale-105 transition-transform duration-500 overflow-hidden" />
               <div className="p-3">
                 <h4 className="font-medium text-amber-800">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
@@ -106,7 +106,7 @@ export default function MenuPage() {
         <div className="flex gap-4 overflow-x-scroll overflow-hidden snap-x">
           {foods.continental.map((item) => (
             <div key={item.name} className=" bg-white rounded-xl shadow">
-              <img src={item.img} className="h-40 min-w-[250px] bg-white rounded-xl snap-center" />
+              <img src={item.img} className="h-40 min-w-[250px] bg-white rounded-t-xl snap-center" />
               <div className="p-3">
                 <h4 className="font-medium text-amber-800">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
