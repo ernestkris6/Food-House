@@ -1,439 +1,228 @@
-// import React from "react";
-
-// const menuSections = [
-//   {
-//     title: "Native Meals",
-//     desc: "Authentic African dishes rich in tradition and bold flavours.",
-//     bg: "bg-[#FFF7ED]",
-//     items: [
-//       { name: "Jollof Rice", img: "/images/native1.jpg" },
-//       { name: "Egusi Soup", img: "/images/native2.jpg" },
-//       { name: "Ofada Rice", img: "/images/native3.jpg" },
-//       { name: "Pounded Yam", img: "/images/native4.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Continental Dishes",
-//     desc: "Elegant international meals crafted for premium taste.",
-//     bg: "bg-[#F5EFE6]",
-//     items: [
-//       { name: "Pasta Alfredo", img: "/images/cont1.jpg" },
-//       { name: "Grilled Chicken", img: "/images/cont2.jpg" },
-//       { name: "Steak & Veggies", img: "/images/cont3.jpg" },
-//       { name: "Seafood Rice", img: "/images/cont4.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Side Dishes",
-//     desc: "Perfectly paired sides to complement every main meal.",
-//     bg: "bg-[#EEF5F1]",
-//     items: [
-//       { name: "Fried Plantain", img: "/images/side1.jpg" },
-//       { name: "Coleslaw", img: "/images/side2.jpg" },
-//       { name: "Yam Fries", img: "/images/side3.jpg" },
-//       { name: "Veggie Mix", img: "/images/side4.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Food Trays & Boxes",
-//     desc: "Neatly packaged meals ideal for group servings and events.",
-//     bg: "bg-[#FAF3F0]",
-//     items: [
-//       { name: "Party Tray", img: "/images/tray1.jpg" },
-//       { name: "Corporate Box", img: "/images/tray2.jpg" },
-//       { name: "Family Pack", img: "/images/tray3.jpg" },
-//       { name: "Event Combo", img: "/images/tray4.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Snacks & Confectionery",
-//     desc: "Freshly made treats for celebrations and casual moments.",
-//     bg: "bg-[#F0F4F8]",
-//     items: [
-//       { name: "Cupcakes", img: "/images/snack1.jpg" },
-//       { name: "Meat Pie", img: "/images/snack2.jpg" },
-//       { name: "Chin Chin", img: "/images/snack3.jpg" },
-//       { name: "Cookies", img: "/images/snack4.jpg" },
-//     ],
-//   },
-// ];
-
-// export default function Menu() {
-//   return (
-//     <main className="w-full overflow-hidden">
-
-//       {/* ================= HERO ================= */}
-//       <section className="bg-[#2A1E1A] text-[#FFF7ED] py-20 px-6 text-center">
-//         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-//           Explore Our Menu
-//         </h1>
-//         <p className="max-w-2xl mx-auto text-lg opacity-90">
-//           Carefully curated meals designed for everyday enjoyment and special occasions.
-//         </p>
-//       </section>
-
-//       {/* ================= MENU SECTIONS ================= */}
-//       {menuSections.map((section, idx) => (
-//         <section key={idx} className={`${section.bg} py-16`}>
-//           <div className="px-6 md:px-16 mb-8">
-//             <h2 className="text-3xl font-bold text-[#2A1E1A] mb-2">
-//               {section.title}
-//             </h2>
-//             <p className="text-gray-700 max-w-xl">
-//               {section.desc}
-//             </p>
-//           </div>
-
-//           {/* ===== SCROLLABLE GRID / SLIDER ===== */}
-//           <div
-//             className="
-//               px-6 md:px-16
-//               flex md:grid
-//               md:grid-cols-3 lg:grid-cols-4
-//               gap-6
-//               overflow-x-auto md:overflow-visible
-//               snap-x snap-mandatory
-//               scrollbar-hide
-//             "
-//           >
-//             {section.items.map((item, i) => (
-//               <div
-//                 key={i}
-//                 className="
-//                   min-w-[75%] sm:min-w-[50%] md:min-w-0
-//                   snap-start
-//                   bg-white/60 backdrop-blur-xl
-//                   rounded-3xl overflow-hidden
-//                   shadow-lg
-//                   hover:scale-105 transition duration-300
-//                 "
-//               >
-//                 <img
-//                   src={item.img}
-//                   alt={item.name}
-//                   className="h-56 w-full object-cover"
-//                 />
-//                 <div className="p-4 text-center">
-//                   <h3 className="font-semibold text-lg text-[#2A1E1A]">
-//                     {item.name}
-//                   </h3>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </section>
-//       ))}
-
-//       {/* ================= EVENTS CTA ================= */}
-//       <section className="bg-gradient-to-r from-amber-700 to-amber-500 py-16 px-6 text-center text-white">
-//         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-//           Catering for Every Event
-//         </h2>
-//         <p className="max-w-3xl mx-auto opacity-95">
-//           Conferences • Seminars • Weddings • Birthdays • Launches • Picnics • Corporate Events
-//         </p>
-//       </section>
-
-//     </main>
-//   );
-// }
-
-
-
-
-
-
 import React from "react";
+import image2 from "../assets/image2.jpg"
+import image3 from "../assets/image3.jpg"
+import image5 from "../assets/image5.jpg"
+import image6 from "../assets/image6.jpg"
+import image7 from "../assets/image7.jpg"
+import image8 from "../assets/image8.jpg"
+import image9 from "../assets/image9.jpg"
+import image10 from "../assets/image10.jpg"
+import image11 from "../assets/image11.jpg"
+import image19 from "../assets/image19.jpg"
+import image13 from "../assets/image13.jpg"
+import image12 from "../assets/image12.jpg"
+import image14 from "../assets/image14.jpg"
+import image15 from "../assets/image15.jpg"
+import image16 from "../assets/image16.jpg"
+import image17 from "../assets/image17.jpg"
+import image34 from "../assets/image34.jpg"
+import image35 from "../assets/image35.jpg"
 
-export default function MenuDetails() {
+ const foods = {
+  native: [
+    { name: "Efo-riro", price: "₦30,000", img: image2 },
+    { name: "Ewa agoin", price: "₦5,000", img: image13 },
+    { name: "Moi-moi", price: "₦1,000", img: image9 },
+    { name: "Edikaikong soup", price: "₦30,000", img: image11 },
+    { name: "Akara, pap & milk", price: "₦3,500", img: image34 },
+    
+  ],
+  continental: [
+    { name: "Basmati jollof & fried rice", price: "₦30,000", img: image17 },
+    { name: "Stir-fry pasta with beef", price: "₦7,000", img: image12 },
+    { name: "Yamarita & mushrooms", price: "₦6,500", img: image5 },
+    { name: "Waffles, egg & baked beans", price: "₦7,000", img: image16 },
+    { name: "Basmati rice", price: "₦5,000", img: image19 },
+    { name: "Beef stick meats", price: "₦3,000", img: image8 },
+    { name: "Pancakes & scrambled eggs", price: "₦5,000", img: image10 },
+  ],
+  snacks: [
+    { name: "Chicken burger", price: "₦4,500", img: image3 },
+    { name: "Sharwama", price: "₦3,500", img: image7 },
+    { name: "Meat Pie", price: "₦1000", img: image6 },
+    { name: "Small chops", price: "₦4,500", img: image14 },
+    { name: "Bread sandwich", price: "₦5,500", img: image15 },
+    { name: "Peanuts", price: "₦2,500", img: image35 },
+  ],
+  sides: [
+    { name: "Creamy coleslaw", price: "₦3,500", img: image14 },
+    { name: "2 litre veg. salad", price: "₦3,500", img: image9 },
+    { name: "Mixed veggies", price: "₦8,500", img: image6 },
+    // { name: "Bread sandwich", price: "₦5,500", img: image15 },
+  ]
+ };
+
+export default function MenuPage() {
   return (
-    <main className="bg-[#0f0f0f] text-white">
+    <div className="overflow-x-hidden bg-[#fffdfa]">
 
-      {/* ================= HERO SECTION ================= */}
-      <section className="relative h-[70vh] flex items-center justify-center">
-        <img
-          src="/images/hero-food.jpg"
-          alt="Food background"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
-        />
-        <div className="relative text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Our Menu
-          </h1>
-          <p className="max-w-xl mx-auto text-gray-200">
-            Carefully crafted meals made with passion, flavor, and finesse.
-          </p>
-        </div>
+      {/* Stick Nav for Sections */}
+      <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semimedium">
+        <a href="#native" className="hover:text-amber-700">Native</a>
+        <a href="#continental" className="hover:text-amber-700">Continental</a>
+        <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
+        {/* <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a> */}
+        <a href="#snacks" className="hover:text-amber-700">Snacks</a>
+      </div>
+
+
+      {/* Hero */}
+      <section className="bg-amber-100 text-center py-16">
+        <h1 className="text-4xl md:text-5xl font-medium text-amber-900">
+          Our Food Menu
+        </h1>
+        <p className="mt-3 text-gray-700">Good taste. Great quality.</p>
       </section>
 
-      {/* ================= MENU CATEGORIES ================= */}
-      <section className="px-6 md:px-16 py-20">
-        <h2 className="text-3xl font-semibold mb-10 text-center">
-          Menu Categories
+
+      {/* Native Meals - Grid */}
+      <section id="native" className="py-14 px-5">
+        <h2 className="text-3xl font-medium text-amber-900 mb-8">
+          Native Meals
         </h2>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            { title: "Native Meals", img: "/images/native.jpg" },
-            { title: "Continental Dishes", img: "/images/continental.jpg" },
-            { title: "Side Dishes", img: "/images/sides.jpg" },
-            { title: "Food Trays", img: "/images/trays.jpg" },
-            { title: "Snacks & Confectionery", img: "/images/snacks.jpg" },
-            { title: "Food in Boxes & Bowls", img: "/images/boxes.jpg" },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="group rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 overflow-hidden hover:scale-[1.03] transition"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="h-56 w-full object-cover group-hover:scale-110 transition"
-              />
-              <div className="p-5">
-                <h3 className="text-xl font-semibold mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-300 text-sm">
-                  Deliciously prepared to satisfy every craving.
-                </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          {foods.native.map((item) => (
+            <div key={item.name} className="bg-white rounded-xl shadow group relative overflow-hidden">
+              <img src={item.img} className="h-48 md:h-72 w-full object-cover rounded-t-xl group relative rounded group-hover:scale-105 transition-transform duration-500 overflow-hidden" />
+              <div className="p-3">
+                <h4 className="font-medium text-amber-800">{item.name}</h4>
+                <p className="text-sm text-gray-600">{item.price}</p>
+                <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
+                  Order Now
+                </button>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ================= FEATURED DISHES ================= */}
-
-      
-      
-      
-
-      {/* ================= CTA SECTION ================= */}
-      <section className="px-6 md:px-16 py-20 bg-gradient-to-r from-amber-700 to-amber-500 text-black">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Place an Order?
-          </h2>
-          <p className="mb-8">
-            Fresh • Hygienic • Timely delivery for all occasions.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 rounded-full bg-black text-white hover:opacity-90 transition">
-              Order Now
-            </button>
-            <button className="px-8 py-3 rounded-full border border-black hover:bg-black hover:text-white transition">
-              Chat on WhatsApp
-            </button>
-          </div>
+       <section id="continental" className="py-14 px-6 bg-amber-100">
+        <h2 className="text-2xl md:text-3xl font-medium text-amber-900 mb-6">
+          Continental Dishes
+        </h2>
+        <div className="flex gap-4 overflow-x-scroll overflow-hidden snap-x">
+          {foods.continental.map((item) => (
+            <div key={item.name} className=" bg-white rounded-xl shadow">
+              <img src={item.img} className="h-40 min-w-[250px] bg-white rounded-xl snap-center" />
+              <div className="p-3">
+                <h4 className="font-medium text-amber-800">{item.name}</h4>
+                <p className="text-sm text-gray-600">{item.price}</p>
+                <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
+      </section> 
+
+      {/* Snacks Overlay Hover Grid */}
+    
+
+              {/* 3️⃣ Side Dishes — MASONRY STYLE */}
+       <section id="sides" className="py-14 px-6 bg-white">
+         <h2 className="text-2xl md:text-3xl font-medium text-amber-900 mb-6">
+           Side Dishes
+         </h2>
+         <div className="columns-2 md:columns-3 gap-4 space-y-4">
+           {/* {[1,2,3,4,5].map((n) => (
+            <img
+              key={n}
+              src="/images/sample.jpg"
+              className="rounded-xl w-full aspect-[4/3] object-cover hover:opacity-80 cursor-pointer"
+            />
+          ))} */}
+          {foods.sides.map((item) => (
+             <div key={item.name} className="relative group rounded-xl overflow-hidden">
+               <img src={item.img} className="h-40 md:h-72  w-full object-cover group-hover:scale-110 duration-500 transition" />
+               {/* <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center">
+                 <p className="font-medium">{item.name}</p>
+                 <p>{item.price}</p>
+                 <button className="mt-2 bg-amber-500 px-3 py-1 rounded text-sm">
+                   Order Now
+                 </button>
+               </div> */}
+               <div className="p-3">
+                <h4 className="font-medium text-amber-800">{item.name}</h4>
+                <p className="text-sm text-gray-600">{item.price}</p>
+                <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
+                  Order Now
+                </button>
+              </div>
+             </div>
+             
+           ))}
+        </div>
+        
+
       </section>
 
-    </main>
-  );
-}
+      {/* 5️⃣ Snacks — OVERLAY HOVER */}
+       <section id="snacks" className="py-14 px-6 bg-amber-900 text-white">
+         <h2 className="text-2xl md:text-3xl font-medium mb-6">
+           Snacks & Confectionery
+         </h2>
+
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+           {foods.snacks.map((item) => (
+             <div key={item.img} className="group relative rounded-xl overflow-hidden">
+               <img
+                 src={item.img}
+                 alt={item.img}
+                 className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-500"
+               />
+               <div className="p-3">
+                <h4 className="font-medium text-white/80">{item.name}</h4>
+                <p className="text-sm text-white/80">{item.price}</p>
+                <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
+                  Order Now
+                </button>
+              </div>
+               {/* <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                 <p className="font-semimedium">{item}</p>
+                 
+               </div> */}
+             </div>
+           ))}
+         </div>
+       </section>
+     </div>
+   );
+ }
 
 
-    // <section className="bg-[#FFF7ED] py-16 px-6 md:px-16">
-    //   <div
-    //     className="
-    //       grid grid-cols-1 md:grid-cols-2
-    //       gap-10 items-center
-    //       max-w-7xl mx-auto
-    //     "
-    //   >
-    //     {/* ===== TEXT SIDE ===== */}
-    //     <div>
-    //       <h2 className="text-3xl md:text-4xl font-bold text-[#2A1E1A] mb-4">
-    //         Get to Know Us
-    //       </h2>
+//  <section id="snacks" className="bg-amber-900 text-white/90 py-14 px-5">
+//           <h2 className="text-3xl font-medium mb-6">Snacks & Confectionery</h2>
 
-    //       <p className="text-gray-700 leading-relaxed mb-4">
-    //         At <span className="font-semibold">Bakehouse Food & Confectionery</span>,
-    //         we don’t just prepare meals — we craft experiences. Every dish is made
-    //         with fresh ingredients, attention to detail, and a passion for quality.
-    //       </p>
-
-    //       <p className="text-gray-700 leading-relaxed mb-6">
-    //         From everyday meals to large-scale events, our goal is simple:
-    //         deliver food that looks beautiful, tastes exceptional, and leaves
-    //         a lasting impression.
-    //       </p>
-
-    //       <button className="
-    //         bg-gradient-to-r from-amber-700 to-amber-500
-    //         text-white px-6 py-3 rounded-full
-    //         font-medium
-    //         hover:opacity-90 transition
-    //       ">
-    //         Learn More
-    //       </button>
-    //     </div>
-
-    //     {/* ===== IMAGE SIDE ===== */}
-    //     <div className="relative">
-    //       <div className="overflow-hidden rounded-3xl shadow-lg">
-    //         <img
-    //           src="/images/about-us.jpg"
-    //           alt="About Bakehouse Food"
-    //           className="
-    //             w-full h-[300px] md:h-[420px]
-    //             object-cover
-    //             transition-transform duration-500
-    //             hover:scale-105
-    //           "
-    //         />
-    //       </div>
-
-    //       {/* Optional decorative overlay */}
-    //       <div className="
-    //         absolute -bottom-6 -left-6
-    //         bg-white/70 backdrop-blur-lg
-    //         px-5 py-3 rounded-2xl shadow-md
-    //         hidden sm:block
-    //       ">
-    //         <p className="text-sm font-semibold text-[#2A1E1A]">
-    //           Quality • Taste • Excellence
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import { useEffect, useRef, useState } from "react";
-
-// const services = [
-//   { title: "Native Meals", image: "/images/native.jpg" },
-//   { title: "Continental Dishes", image: "/images/continental.jpg" },
-//   { title: "Side Dishes", image: "/images/sides.jpg" },
-//   { title: "Food Trays", image: "/images/trays.jpg" },
-//   { title: "Food in Bowls", image: "/images/bowls.jpg" },
-//   { title: "Food in Boxes", image: "/images/boxes.jpg" },
-//   { title: "Snacks & Confectionery", image: "/images/snacks.jpg" },
-//   { title: "Corporate & Events Catering", image: "/images/events.jpg" },
-// ];
-
-// export default function ServicesSlider() {
-//   const sliderRef = useRef(null);
-//   const [index, setIndex] = useState(0);
-
-//   // Auto-play
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setIndex((prev) => (prev + 1) % services.length);
-//     }, 4000);
-
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   // Scroll effect
-//   useEffect(() => {
-//     if (sliderRef.current) {
-//       sliderRef.current.scrollTo({
-//         left: sliderRef.current.clientWidth * index,
-//         behavior: "smooth",
-//       });
-//     }
-//   }, [index]);
-
-//   return (
-//     <section className="py-20 bg-gradient-to-b from-[#fafafa] to-[#f1f5f9]">
-//       <div className="max-w-7xl mx-auto px-6">
-
-//         {/* Header */}
-//         <div className="text-center mb-12">
-//           <h2 className="text-3xl md:text-4xl font-semibold">
-//             Our Menu
-//           </h2>
-//           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-//             Premium meals and professional catering for every occasion.
-//           </p>
-//         </div>
-
-//         {/* Slider */}
-//         <div
-//           ref={sliderRef}
-//           className="flex overflow-x-hidden scroll-smooth"
-//         >
-//           {services.map((service, i) => (
-//             <div
-//               key={i}
-//               className="min-w-full px-4"
-//             >
-//               <div className="group relative h-[420px] rounded-3xl overflow-hidden shadow-lg">
-//                 <img
-//                   src={service.image}
-//                   alt={service.title}
-//                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-//                 />
-
-//                 {/* Overlay */}
-//                 <div className="absolute inset-0 bg-black/40" />
-
-//                 {/* Content */}
-//                 <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
-//                   <h3 className="text-2xl md:text-3xl font-semibold">
-//                     {service.title}
-//                   </h3>
-
-//                   <button className="mt-4 w-fit bg-amber-500 hover:bg-amber-400 transition px-6 py-3 rounded-full text-sm font-medium">
-//                     Book Now
-//                   </button>
-//                 </div>
+//          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+//            {foods.snacks.map((item) => (
+//              <div key={item.name} className="relative group rounded-xl overflow-hidden">
+//                <img src={item.img} className="h-40 md:h-72 w-full object-cover group-hover:scale-110 transition" />
+//                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center">
+//                  <p className="font-medium">{item.name}</p>
+//                  <p>{item.price}</p>
+//                  <button className="mt-2 bg-amber-500 px-3 py-1 rounded text-sm">
+//                    Order Now
+//                  </button>
+//                </div>
+//                <div className="p-3">
+//                 <h4 className="font-medium text-white/80">{item.name}</h4>
+//                 <p className="text-sm text-white/80">{item.price}</p>
+//                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded">
+//                   Order Now
+//                 </button>
 //               </div>
-//             </div>
-//           ))}
-//         </div>
+//              </div>
+             
+//            ))}
+//          </div>
+//        </section>  
 
-//         {/* Pagination Dots */}
-//         <div className="flex justify-center gap-3 mt-8">
-//           {services.map((_, i) => (
-//             <button
-//               key={i}
-//               onClick={() => setIndex(i)}
-//               className={`w-3 h-3 rounded-full transition ${
-//                 index === i
-//                   ? "bg-amber-500 scale-110"
-//                   : "bg-gray-300"
-//               }`}
-//             />
-//           ))}
-//         </div>
 
-//       </div>
-//     </section>
-//   );
-// }
+
+
+      
 
 
 
@@ -444,114 +233,3 @@ export default function MenuDetails() {
 
 
 
-
-// // import { useEffect, useRef, useState } from "react";
-
-// // const services = [
-// //   { title: "Native Meals", image: "/images/native.jpg" },
-// //   { title: "Continental Dishes", image: "/images/continental.jpg" },
-// //   { title: "Side Dishes", image: "/images/sides.jpg" },
-// //   { title: "Food Trays", image: "/images/trays.jpg" },
-// //   { title: "Food in Bowls", image: "/images/bowls.jpg" },
-// //   { title: "Food in Boxes", image: "/images/boxes.jpg" },
-// //   { title: "Snacks & Confectionery", image: "/images/snacks.jpg" },
-// //   { title: "Corporate & Event Catering", image: "/images/events.jpg" },
-// // ];
-
-// // export default function MenuDetails() {
-// //   const sliderRef = useRef(null);
-// //   const [index, setIndex] = useState(0);
-
-// //   // Auto-play
-// //   useEffect(() => {
-// //     const timer = setInterval(() => {
-// //       setIndex((prev) => (prev + 1) % services.length);
-// //     }, 4500);
-// //     return () => clearInterval(timer);
-// //   }, []);
-
-// //   // Scroll on index change
-// //   useEffect(() => {
-// //     sliderRef.current?.scrollTo({
-// //       left: sliderRef.current.clientWidth * index,
-// //       behavior: "smooth",
-// //     });
-// //   }, [index]);
-
-// //   return (
-// //     <section className="py-20 bg-gradient-to-b from-neutral-900 to-black text-white">
-// //       <div className="max-w-7xl mx-auto px-6">
-
-// //         {/* Header */}
-// //         <div className="text-center mb-14">
-// //           <h2 className="text-3xl md:text-4xl font-semibold">
-// //             Our Services
-// //           </h2>
-// //           <p className="mt-4 text-white/70 max-w-2xl mx-auto">
-// //             Crafted meals and premium catering experiences for every occasion.
-// //           </p>
-// //         </div>
-
-// //         {/* Slider */}
-// //         <div
-// //           ref={sliderRef}
-// //           className="flex overflow-hidden"
-// //         >
-// //           {services.map((service, i) => (
-// //             <div key={i} className="min-w-full px-4">
-// //               <div className="relative h-[420px] rounded-3xl overflow-hidden">
-
-// //                 {/* Background Image */}
-// //                 <img
-// //                   src={service.image}
-// //                   alt={service.title}
-// //                   className="absolute inset-0 w-full h-full object-cover"
-// //                 />
-
-// //                 {/* Dark overlay */}
-// //                 <div className="absolute inset-0 bg-black/50" />
-
-// //                 {/* Glass Card */}
-// //                 <div className="absolute bottom-8 left-8 right-8 md:right-auto md:w-[420px]
-// //                                 backdrop-blur-xl bg-white/10 border border-white/20
-// //                                 rounded-2xl p-6 shadow-xl
-// //                                 transition hover:bg-white/15">
-
-// //                   <h3 className="text-xl md:text-2xl font-semibold">
-// //                     {service.title}
-// //                   </h3>
-
-// //                   <p className="mt-2 text-sm text-white/80">
-// //                     Premium quality, hygienic preparation, and stunning presentation.
-// //                   </p>
-
-// //                   <button className="mt-5 bg-amber-500 hover:bg-amber-400 transition
-// //                                      text-black font-medium px-6 py-3 rounded-full text-sm">
-// //                     Book Now
-// //                   </button>
-// //                 </div>
-
-// //               </div>
-// //             </div>
-// //           ))}
-// //         </div>
-
-// //         {/* Pagination Dots */}
-// //         <div className="flex justify-center gap-3 mt-8">
-// //           {services.map((_, i) => (
-// //             <button
-// //               key={i}
-// //               onClick={() => setIndex(i)}
-// //               className={`w-3 h-3 rounded-full transition ${
-// //                 index === i
-// //                   ? "bg-amber-500 scale-110"
-// //                   : "bg-white/40"
-// //               }`}
-// //             />
-// //           ))}
-// //         </div>
-
-// //       </div>
-// //     </section>
-// //   );
-// // }

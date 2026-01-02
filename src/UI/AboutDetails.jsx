@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import image1 from '../assets/image1.jpg'
+import image31 from '../assets/image31.jpg'
+import image33 from '../assets/image33.jpg'
+
 
 export default function AboutDetails() {
   return (
@@ -42,7 +45,7 @@ export default function AboutDetails() {
 
         <div className="relative h-[380px] rounded-tl-3xl rounded-br-3xl overflow-hidden shadow-2xl">
           <img
-            src={image1}
+            src={image31}
             alt="Our kitchen"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -105,7 +108,7 @@ export default function AboutDetails() {
       {/* EVENTS */}
       <div className="relative py-24 overflow-hidden">
         <img
-          src={image1}
+          src={image33}
           alt="Events catering"
           className="absolute inset-0 w-full h-full object-cover"
         />
