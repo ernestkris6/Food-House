@@ -56,7 +56,7 @@ export default function Products() {
   return (
     <div>
       <section className="px-6 md:px-16 py-20 bg-white/20">
-        <h2 className="text-3xl font-medium mb-10 text-center">
+        <h2 className="text-lg md:text-2xl font-medium mb-10 text-center">
           Top Trending Dishes
         </h2>
 
