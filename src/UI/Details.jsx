@@ -8,7 +8,7 @@ export default function Details() {
   return (
     <section className='mt-1'>
         <div className='bg-gradient-to-r from-amber-700 to-amber-500 text-center py-4'>
-            <p className='uppercase text-white/90 text-xs md:text-lg'>About Bakehouse & confectioneries</p>
+            <p className='uppercase text-white/90 text-xs md:text-lg'>About Bakehouse foods & confectioneries</p>
             <h2 className='text-lg md:text-3xl font-medium'>Perfect Place For An Exceptional</h2>
             <h2 className='text-lg md:text-3xl font-medium'>Experience</h2>
         </div>

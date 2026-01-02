@@ -11,9 +11,9 @@ export default function HeroSection() {
             <p className='text-white font-medium text-2xl md:text-4xl'>fantastic food</p>
             <p className='text-white/90 font-medium ml-2 mr-2 sm:ml-0 sm:mr-0'>Delicious food deserves a space that enhances it flavours,</p>
             <p className='text-white/90 font-medium ml-2 mr-2 sm:ml-0 sm:mr-0'>where every detail is crafted to delight and inspire.</p>
-            <p onClick={() => scrollTo(0,0)}>
+            <p  onClick={() => scrollTo(0,0)}>
               <Link to='menu'>
-                <button className='bg-[#f3274c] text-white rounded px-6 py-2 mt-4 cursor-pointer'>See Our Menus</button>
+                <button className='bg-[#f3274c] text-white rounded px-6 py-2 mt-6 mb-8 cursor-pointer'>See Our Menus</button>
             </Link>
             </p>
         </div>
