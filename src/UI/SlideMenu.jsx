@@ -12,98 +12,83 @@ const slide = [
         id: 0,
         img: image12,
         alt: "",
-        desc: "Stir fry pasta with veggies & beef"
+        desc: "Continental dishes",
+        price: "₦7,000",
     },
     {
         id: 1,
         img: image13,
         alt: "",
-        desc: `Native "ewa agoin" with yam`
+        desc: `Native meals`,
+        price: "₦5,000",
     },
     {
         id: 2,
         img: image7,
         alt: "",
-        desc: "Chicken shawarma"
+        desc: "Snacks",
+        price: "₦3,500",
 
     },
     {
         id: 3,
         img: image15,
         alt: "",
-        desc: "Bread sandwich"
+        desc: "Brekfast",
+        price: "₦5,500",
     },
     {
         id: 4,
         img: image16,
         alt: "",
-        desc: "Waffles and eggs with baked beans"
+        desc: "Waffles",
+        price: "₦7,000",
     },
     {
         id: 5,
         img: image17,
         alt: "",
-        desc: "Basmati jollof & fried rice"
+        desc: "Continental rice",
+        price: "₦30,000",
     }
 ]
 
 export default function SlideMenu() {
   return (
     <div className='py-6'>
-        <h1 className='text-center font-medium text-lg pt-8 md:text-2xl'>Explore Our Products</h1>
+        <h1 className='text-center font-medium text-xl pt-8 md:text-2xl'>Explore Our Products</h1>
       <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide max-w-7xl gap-4 mx-auto px-6 py-4">
         {slide.map((item, i) => (
           <div
             key={i}
-            className="bg-[#E7f5f5] min-w-[300px] md:max-w-[278px] rounded-2xl p-8 cursor-pointer"
+            className="min-w-[256px] md:max-w-[278px]  cursor-pointer shadow-lg"
           >
-            <h3 className="text-xl font-semibold text-black/80">
+            {/* <h3 className="text-xl md:text-2xl
+             font-semibold text-black/80">
               {item.title}
-            </h3>
+            </h3> */}
             <img
                 src={item.img}
                 alt={item.name}
-                className="w-full h-64 object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-64 object-cover rounded-t-2xl transition-transform duration-500 group-hover:scale-110"
               />
-            <p className="mt-4 text-black/90">
+           <div className='bg-[#E7f5f5]'>
+             <p className="pb-2 rounded-b-2xl pl-4 pt-2 text-black/90">
               {item.desc}
             </p>
+            <p className="rounded-b-2xl pl-4 text-black/90">
+              {item.price}
+            </p>
+            <div className='px-4'>
+              <button className='w-full text-white/90 rounded bg-amber-600 hover:bg-amber-600/80 mb-4 py-2 cursor-pointer'>Order Now</button>
+            </div>
+           </div>
           </div>
     ))}
+  </div>
 </div>
- 
-    </div>
   )
 }
 
 
 
-
-
-//** */
-        //   { title: "Corporate meetings and conferences", desc: "Prepared with the highest hygiene standards and fresh ingredients." },
-        //   { title: "Seminars and product launches", desc: "Timely delivery and courteous, professional handling." },
-        //   { title: "Weddings and birthday celebrations", desc: "Meals that look as good as they taste." },
-        //   { title: "Outdoor picnics and private gatherings", desc: "Meals that look as good as they taste." },
-        //   { title: "Bulk Orders", desc: "Meals that look as good as they taste." },
-          
-        
-//  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-//           {slide.map((service, index) => (
-//             <div
-//               key={index}
-//               className="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer transform transition-all duration-500 hover:scale-105"
-//             >
-//               <img
-//                 src={service.image}
-//                 alt={service.name}
-//                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-//               />
-//               <div className="absolute inset-0 bg-black/30 bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-//                 <h2 className="text-white text-xl md:text-2xl font-semibold text-center px-4">
-//                   {service.name}
-//                 </h2>
-//               </div>
-//             </div>
-//           ))}
-//         </div>

@@ -41,14 +41,14 @@ const images = [
     img: image5,
     alt: 'image 9',
     text: "Yamarita",
-    desc: "Yam with mushroom veggies & sauce",
+    desc: "Yam & sauce",
   },
   {
     id: 5,
     img: image11,
     alt: 'image 9',
     text: "Native Soups",
-    desc: "Classic Efo-riro with ponmo and assorted offals",
+    desc: "Efo-riro with assorted offals",
   },
 ]
 
@@ -64,18 +64,16 @@ export default function Products() {
           {images.map((item, i) => (
             <div
               key={i}
-              className="rounded-xl overflow-hidden shadow-2xl transition"
+              className="bg-[#FFF7ED] rounded-xl overflow-hidden shadow-lg transition"
             >
               <img
                 src={item.img}
                 alt={item.alt}
                 className="w-full h-36 lg:h-72 object-cover"
               />
-              <div className="p-2 bg-black/60">
-                <h4 className="font-semibold">{item.text}</h4>
-                <p className="text-xs md:text-sm text-gray-300">
-                  {item.desc}
-                </p>
+              <div className="px-2 py-4">
+                <h4 className="font-medium text-amber-800">{item.text}</h4>
+                <p className="text-base md:text-lg text-gray-600">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -126,3 +124,11 @@ export default function Products() {
 
 
 
+
+
+{/* <div className="p-3 bg-black/60">
+                <h4 className="font-semibold"></h4>
+                <p className="text-xs md:text-sm text-gray-300">
+                  
+                </p>
+              </div> */}

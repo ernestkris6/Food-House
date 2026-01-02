@@ -36,7 +36,7 @@ export default function ContactDetails() {
                 <FiPhone className="text-amber-500 text-xl mt-1" />
                 <div>
                   <p className="font-medium text-gray-900">Phone</p>
-                  <p className="text-gray-600">+234 806 529 2598</p>
+                  <p className="text-gray-600">+234 803 076 9110</p>
                 </div>
               </div>
 

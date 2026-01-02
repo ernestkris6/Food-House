@@ -8,6 +8,7 @@ import image6 from '../assets/image6.jpg'
 import image16 from '../assets/image16.jpg'
 import image18 from '../assets/image18.jpg'
 import image15 from '../assets/image15.jpg'
+import { Link } from "react-router-dom";
 
 
 const services = [
@@ -100,10 +101,14 @@ const ServicesPage = () => {
       </div>
         </div>
         <div className="pb-8 text-center">
-          <button className="inline-block uppercase bg-black text-white text-base md:text-lg px-8 py-2 cursor-pointer rounded-full hover:bg-gray-800 transition"
+          <p onClick={() => scrollTo(0,0)}>
+            <Link to='/contact'>
+            <button className="inline-block uppercase bg-black text-white text-base md:text-lg px-8 py-2 cursor-pointer rounded-full hover:bg-gray-800 transition"
           >
             Contact us
           </button>
+          </Link>
+          </p>
         </div>
       </div>
     </div>
