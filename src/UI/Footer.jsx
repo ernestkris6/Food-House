@@ -26,7 +26,7 @@ export default function Footer() {
             <p className="text-sm leading-6">
               Bakehouse Food & Confectionery delivers exquisite meals that bring class, flavour, and satisfaction to every celebration.
             </p>
-            <p className="text-sm italic">
+            <p className="text-sm">
               “From native delicacies to continental cuisine, we serve food that tells a story of excellence.”
             </p>
           </div>

@@ -1,25 +1,41 @@
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import image1 from '../assets/image1.jpg'
+import image31 from '../assets/image31.jpg'
 import image2 from '../assets/image2.jpg'
-import image3 from '../assets/image3.jpg'
-import image4 from '../assets/image4.jpg'
+import image33 from '../assets/image33.jpg'
 import image5 from '../assets/image5.jpg'
 import image6 from '../assets/image6.jpg'
-import image7 from '../assets/image7.jpg'
-import image8 from '../assets/image8.jpg'
+import image16 from '../assets/image16.jpg'
+import image18 from '../assets/image18.jpg'
+import image15 from '../assets/image15.jpg'
 
 
 const services = [
-  { name: "Native Meals", image: image1 },
-  { name: "Continental Dishes", image: image2 },
-  { name: "Side Dishes", image: image3 },
-  { name: "Food Trays", image: image4 },
-  { name: "Food in Bowls", image: image5 },
-  { name: "Food in Boxes", image: image6 },
-  { name: "Snacks & Confectionery", image: image7 },
-  { name: "Corporate & Event Catering", image: image8 },
+  { name: "Native Meals", image: image2 },
+  { name: "Food Trays", image: image33 },
+  { name: "Continental Dishes", image: image16 },
+  { name: "Side Dishes", image: image18 },
+  { name: "Food in Bowls & Boxes", image: image5 },
+  { name: "Snacks & Confectionery", image: image6 },
+  { name: "Breakfast", image: image15 },
+  { name: "Corporate & Event Catering", image: image31 },
 ];
+
+const servicesContent = 
+    [
+      { title: "Corporate meetings and conferences",
+        desc: "Professional catering tailored to keep your meetings productive and your guests satisfied, with timely service and refined presentation." },
+      { title: "Seminars and product launches", 
+        desc: "Impress your audience with delicious meals and snacks that complement your brand and elevate every moment of your event." },
+      { title: "Weddings and birthday celebrations",
+        desc: "Celebrate your special moments with beautifully prepared dishes that bring joy, flavor, and unforgettable memories to your occasion." },
+      { title: "Outdoor picnics and private gatherings",
+        desc: "Intimate catering crafted to match the warmth and style of your private celebrations, making every gathering feel special." },
+      { title: "Bulk Orders", 
+        desc: "Reliable bulk catering designed to serve large groups without compromising on taste, quality, or presentation." 
+      },   
+          
+        ]
 
 const ServicesPage = () => {
   return (
@@ -68,14 +84,7 @@ const ServicesPage = () => {
         </div>
         <div>
       <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide max-w-7xl gap-4 mx-auto px-6 py-8">
-        {[
-          { title: "Corporate meetings and conferences", desc: "Prepared with the highest hygiene standards and fresh ingredients." },
-          { title: "Seminars and product launches", desc: "Timely delivery and courteous, professional handling." },
-          { title: "Weddings and birthday celebrations", desc: "Meals that look as good as they taste." },
-          { title: "Outdoor picnics and private gatherings", desc: "Meals that look as good as they taste." },
-          { title: "Bulk Orders", desc: "Meals that look as good as they taste." },
-          
-        ].map((item, i) => (
+        {servicesContent.map((item, i) => (
           <div
             key={i}
             className="bg-[#E7f5f5] min-w-[300px] md:max-w-[278px] rounded-2xl p-8 cursor-pointer"
