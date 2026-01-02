@@ -57,10 +57,7 @@ export default function MenuPage() {
   return (
     <div className="overflow-x-hidden bg-[#fffdfa]">
 
-      
-
-
-      {/* Hero */}
+     {/* Hero */}
       
       <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
               <img
@@ -94,7 +91,7 @@ export default function MenuPage() {
           Native Meals
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {foods.native.map((item) => (
             <div key={item.name} className="bg-white rounded-xl shadow group relative overflow-hidden">
               <img src={item.img} className="h-48 md:h-72 w-full object-cover rounded-t-xl group relative group-hover:scale-105 transition-transform duration-500 overflow-hidden" />
@@ -114,7 +111,7 @@ export default function MenuPage() {
         <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-6">
           Continental Dishes
         </h2>
-        <div className="flex gap-4 overflow-x-scroll overflow-hidden snap-x">
+        <div className="flex gap-2 md:gap-4 overflow-x-scroll overflow-hidden snap-x">
           {foods.continental.map((item) => (
             <div key={item.name} className=" bg-white rounded-xl shadow">
               <img src={item.img} className="h-40 min-w-[250px] bg-white rounded-t-xl snap-center" />
@@ -128,19 +125,16 @@ export default function MenuPage() {
             </div>
           ))}
         </div>
-      </section> 
+      </section>   
 
-      {/* Snacks Overlay Hover Grid */}
-    
-
-              {/* 3️⃣ Side Dishes — MASONRY STYLE */}
+              {/* 3️⃣ Side Dishes  */}
         
          <section id="sides" className="py-14 px-6 bg-white text-amber-900">
          <h2 className="text-xl md:text-2xl font-medium mb-6">
            Side Dishes
          </h2>
 
-         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
            {foods.sides.map((item) => (
              <div key={item.img} className="group relative rounded-xl overflow-hidden shadow">
                <img
@@ -166,7 +160,7 @@ export default function MenuPage() {
            Snacks & Confectionery
          </h2>
 
-         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
            {foods.snacks.map((item) => (
              <div key={item.img} className="group relative rounded-xl overflow-hidden shadow-lg">
                <img
