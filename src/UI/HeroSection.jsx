@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function HeroSection() {
   return (
     <div className='relative'>
-        <img className='w-full h-[80svh] lg:h-[85dvh] object-cover' src={hero2} alt="" />
+        <img className='w-full h-[90svh] lg:h-[85dvh] object-cover' src={hero2} alt="" />
         <div className='animate-fade-up absolute text-center md:text-start top-[278px] sm:top-[270px] sm:left-[128px]'>
             <p className='text-white font-medium text-2xl md:text-4xl'>In the perfect space,</p> 
             <p className='text-white font-medium text-2xl md:text-4xl'>fantastic food</p>
