@@ -40,7 +40,7 @@ import image35 from "../assets/image35.jpg"
   snacks: [
     { name: "Chicken burger", price: "₦4,500", img: image3 },
     { name: "Sharwama", price: "₦3,500", img: image7 },
-    { name: "Meat Pie", price: "₦1000", img: image6 },
+    { name: "Meat Pie", price: "₦1,000", img: image6 },
     { name: "Small chops", price: "₦4,500", img: image14 },
     { name: "Bread sandwich", price: "₦5,500", img: image15 },
     { name: "Peanuts", price: "₦2,500", img: image35 },
