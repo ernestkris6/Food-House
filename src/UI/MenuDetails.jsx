@@ -57,13 +57,7 @@ export default function MenuPage() {
     <div className="overflow-x-hidden bg-[#fffdfa]">
 
       {/* Stick Nav for Sections */}
-      <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semimedium">
-        <a href="#native" className="hover:text-amber-700">Native</a>
-        <a href="#continental" className="hover:text-amber-700">Continental</a>
-        <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
-        {/* <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a> */}
-        <a href="#snacks" className="hover:text-amber-700">Snacks</a>
-      </div>
+      
 
 
       {/* Hero */}
@@ -73,6 +67,14 @@ export default function MenuPage() {
         </h1>
         <p className="mt-3 text-gray-700">Good taste. Great quality.</p>
       </section>
+
+      <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semimedium">
+        <a href="#native" className="hover:text-amber-700">Native</a>
+        <a href="#continental" className="hover:text-amber-700">Continental</a>
+        <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
+        {/* <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a> */}
+        <a href="#snacks" className="hover:text-amber-700">Snacks</a>
+      </div>
 
 
       {/* Native Meals - Grid */}
@@ -121,42 +123,31 @@ export default function MenuPage() {
     
 
               {/* 3️⃣ Side Dishes — MASONRY STYLE */}
-       <section id="sides" className="py-14 px-6 bg-white">
-         <h2 className="text-2xl md:text-3xl font-medium text-amber-900 mb-6">
+        
+         <section id="sides" className="py-14 px-6 bg-white text-amber-900">
+         <h2 className="text-2xl md:text-3xl font-medium mb-6">
            Side Dishes
          </h2>
-         <div className="columns-2 md:columns-3 gap-4 space-y-4">
-           {/* {[1,2,3,4,5].map((n) => (
-            <img
-              key={n}
-              src="/images/sample.jpg"
-              className="rounded-xl w-full aspect-[4/3] object-cover hover:opacity-80 cursor-pointer"
-            />
-          ))} */}
-          {foods.sides.map((item) => (
-             <div key={item.name} className="relative group rounded-xl overflow-hidden">
-               <img src={item.img} className="h-40 md:h-72  w-full object-cover group-hover:scale-110 duration-500 transition" />
-               {/* <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center">
-                 <p className="font-medium">{item.name}</p>
-                 <p>{item.price}</p>
-                 <button className="mt-2 bg-amber-500 px-3 py-1 rounded text-sm">
-                   Order Now
-                 </button>
-               </div> */}
+
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+           {foods.sides.map((item) => (
+             <div key={item.img} className="group relative rounded-xl overflow-hidden shadow">
+               <img
+                 src={item.img}
+                 alt={item.img}
+                 className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-500"
+               />
                <div className="p-3">
-                <h4 className="font-medium text-amber-800">{item.name}</h4>
+                <h4 className="font-medium text-amber-900">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
                   Order Now
                 </button>
               </div>
              </div>
-             
            ))}
-        </div>
-        
-
-      </section>
+         </div>
+       </section>
 
       {/* 5️⃣ Snacks — OVERLAY HOVER */}
        <section id="snacks" className="py-14 px-6 bg-amber-900 text-white">
@@ -179,10 +170,6 @@ export default function MenuPage() {
                   Order Now
                 </button>
               </div>
-               {/* <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                 <p className="font-semimedium">{item}</p>
-                 
-               </div> */}
              </div>
            ))}
          </div>
@@ -192,32 +179,7 @@ export default function MenuPage() {
  }
 
 
-//  <section id="snacks" className="bg-amber-900 text-white/90 py-14 px-5">
-//           <h2 className="text-3xl font-medium mb-6">Snacks & Confectionery</h2>
 
-//          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
-//            {foods.snacks.map((item) => (
-//              <div key={item.name} className="relative group rounded-xl overflow-hidden">
-//                <img src={item.img} className="h-40 md:h-72 w-full object-cover group-hover:scale-110 transition" />
-//                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center">
-//                  <p className="font-medium">{item.name}</p>
-//                  <p>{item.price}</p>
-//                  <button className="mt-2 bg-amber-500 px-3 py-1 rounded text-sm">
-//                    Order Now
-//                  </button>
-//                </div>
-//                <div className="p-3">
-//                 <h4 className="font-medium text-white/80">{item.name}</h4>
-//                 <p className="text-sm text-white/80">{item.price}</p>
-//                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded">
-//                   Order Now
-//                 </button>
-//               </div>
-//              </div>
-             
-//            ))}
-//          </div>
-//        </section>  
 
 
 
