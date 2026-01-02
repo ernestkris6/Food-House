@@ -18,7 +18,7 @@ export default function AboutDetails() {
         <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative text-center px-6 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+          <h1 className="text-4xl md:text-5xl font-medium leading-tight">
             Serving Taste, <span className="text-amber-500">Creating Memories</span>
           </h1>
           <p className="mt-5 text-white/80 text-lg">

@@ -1,4 +1,5 @@
 import React from "react";
+import image33 from "../assets/image33.jpg"
 import image2 from "../assets/image2.jpg"
 import image3 from "../assets/image3.jpg"
 import image5 from "../assets/image5.jpg"
@@ -56,20 +57,30 @@ export default function MenuPage() {
   return (
     <div className="overflow-x-hidden bg-[#fffdfa]">
 
-      {/* Stick Nav for Sections */}
       
 
 
       {/* Hero */}
-      <section className="bg-amber-100 text-center py-16">
-        <h1 className="text-4xl md:text-5xl font-medium text-amber-900">
-          Our Food Menu
+      
+      <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+              <img
+                src={image33}
+                alt="About us"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50" />
+      
+              <div className="relative text-center px-6 max-w-3xl">
+                <h1 className="text-4xl md:text-5xl font-medium text-white/90">
+          Our <span className="text-amber-500">Food Menu</span>
         </h1>
-        <p className="mt-3 text-gray-700">Good taste. Great quality.</p>
-      </section>
+                <p className="mt-3 text-white/90">Great taste. Best quality.</p>
+              </div>
+            </div>
 
-      <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semimedium">
-        <a href="#native" className="hover:text-amber-700 active:text-amber-900">Native</a>
+      {/* Stick Nav for Sections */}
+      <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semibold">
+        <a href="#native" className="hover:text-amber-700">Native</a>
         <a href="#continental" className="hover:text-amber-700">Continental</a>
         <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
         {/* <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a> */}
@@ -79,7 +90,7 @@ export default function MenuPage() {
 
       {/* Native Meals - Grid */}
       <section id="native" className="py-14 px-5">
-        <h2 className="text-3xl font-medium text-amber-900 mb-8">
+        <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-8">
           Native Meals
         </h2>
 
@@ -100,7 +111,7 @@ export default function MenuPage() {
       </section>
 
        <section id="continental" className="py-14 px-6 bg-amber-100">
-        <h2 className="text-2xl md:text-3xl font-medium text-amber-900 mb-6">
+        <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-6">
           Continental Dishes
         </h2>
         <div className="flex gap-4 overflow-x-scroll overflow-hidden snap-x">
@@ -125,7 +136,7 @@ export default function MenuPage() {
               {/* 3️⃣ Side Dishes — MASONRY STYLE */}
         
          <section id="sides" className="py-14 px-6 bg-white text-amber-900">
-         <h2 className="text-2xl md:text-3xl font-medium mb-6">
+         <h2 className="text-xl md:text-2xl font-medium mb-6">
            Side Dishes
          </h2>
 
@@ -150,22 +161,22 @@ export default function MenuPage() {
        </section>
 
       {/* 5️⃣ Snacks — OVERLAY HOVER */}
-       <section id="snacks" className="py-14 px-6 bg-amber-900 text-white">
-         <h2 className="text-2xl md:text-3xl font-medium mb-6">
+       <section id="snacks" className="py-14 px-6 bg-amber-100 text-white">
+         <h2 className="text-xl md:text-2xl font-medium mb-6 text-amber-900">
            Snacks & Confectionery
          </h2>
 
          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
            {foods.snacks.map((item) => (
-             <div key={item.img} className="group relative rounded-xl overflow-hidden">
+             <div key={item.img} className="group relative rounded-xl overflow-hidden shadow-lg">
                <img
                  src={item.img}
                  alt={item.img}
                  className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-500"
                />
                <div className="p-3">
-                <h4 className="font-medium text-white/80">{item.name}</h4>
-                <p className="text-sm text-white/80">{item.price}</p>
+                <h4 className="font-medium text-amber-900">{item.name}</h4>
+                <p className="text-sm text-gray-600">{item.price}</p>
                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
                   Order Now
                 </button>
