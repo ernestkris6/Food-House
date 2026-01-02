@@ -114,7 +114,7 @@ export default function MenuPage() {
         <div className="flex gap-2 md:gap-4 overflow-x-scroll overflow-hidden snap-x">
           {foods.continental.map((item) => (
             <div key={item.name} className=" bg-white rounded-xl shadow">
-              <img src={item.img} className="h-40 min-w-[250px] bg-white rounded-t-xl snap-center" />
+              <img src={item.img} className="h-56 min-w-[250px] bg-white rounded-t-xl snap-center" />
               <div className="p-3">
                 <h4 className="font-medium text-amber-800">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
