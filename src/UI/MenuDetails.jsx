@@ -21,37 +21,40 @@ import image18 from "../assets/image18.jpg"
 import image20 from "../assets/image20.jpg"
 import image35 from "../assets/image35.jpg"
 import image36 from "../assets/image36.jpg"
-import image37 from "../assets/image37.jpg"
-import image38 from "../assets/image38.jpg"
+// import image37 from "../assets/image37.jpg"
+// import image38 from "../assets/image38.jpg"
 import image39 from "../assets/image39.jpg"
-import image40 from "../assets/image40.jpg"
+// import image40 from "../assets/image40.jpg"
 import image41 from "../assets/image41.jpg"
-import image42 from "../assets/image42.jpg"
-import image43 from "../assets/image43.jpg"
+// import image42 from "../assets/image42.jpg"
+// import image43 from "../assets/image43.jpg"
 import image44 from "../assets/image44.jpg"
 import image45 from "../assets/image45.jpg"
 
  const foods = {
   native: [
-    { name: "Efo-riro", price: "₦30,000", img: image2 },
+    { name: "Portion of efo-riro", price: "₦1,000", img: image2 },
     { name: "Ewa agoin", price: "₦5,000", img: image13 },
     { name: "Moi-moi", price: "₦1,000", img: image9 },
-    { name: "Edikaikong soup", price: "₦30,000", img: image11 },
-    { name: "Akara, pap & milk", price: "₦3,500", img: image36 },
-    { name: "Beef, fish Stew", price: "₦3,500", img: image44 },
-    { name: "Egusi soup", price: "₦3,500", img: image45 },
-    { name: "Okra soup", price: "₦3,500", img: image39 },
-    { name: "Pounded yam", price: "₦3,500", img: image41 },
+    { name: "Portion of edikaikong soup", price: "₦1,500", img: image11 },
+    { name: "Akara, pap, milk & sugar", price: "₦3,000", img: image36 },
+    { name: "Beef stew", price: "₦1,000", img: image44 },
+    { name: "Portion of egusi soup", price: "₦1,000", img: image45 },
+    { name: "Portion of okra soup", price: "₦1,000", img: image39 },
+    { name: "A wrap of poundedyam", price: "₦1,000", img: image41 },
+    { name: "Ponmo stew", price: "₦1,000", img: image44 },
+    { name: "Akara, oats, milk & sugar", price: "₦3,500", img: image36 },
     
   ],
   continental: [
-    { name: "Basmati jollof & fried rice", price: "₦30,000", img: image17 },
-    { name: "Stir-fry pasta with beef", price: "₦7,000", img: image12 },
-    { name: "Yamarita & mushrooms", price: "₦6,500", img: image5 },
-    { name: "Waffles, egg & baked beans", price: "₦7,000", img: image16 },
-    { name: "Basmati rice", price: "₦5,000", img: image19 },
-    { name: "Beef stick meats", price: "₦3,000", img: image8 },
-    { name: "Pancakes & scrambled eggs", price: "₦5,000", img: image10 },
+    { name: "Portion of basmati jollof rice", price: "₦1,000", img: image17 },
+    { name: "Stir-fry pasta with beef", price: "₦5,000", img: image12 },
+    { name: "Yamarita, mushrooms veggies & sauce", price: "₦5,500", img: image5 },
+    { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16 },
+    { name: "Portion of basmati fried rice", price: "₦4,000", img: image17 },
+    { name: "Plate of basmati white rice,stew & egg", price: "₦4,000", img: image19 },
+    { name: "Beef stick meats", price: "₦2,000", img: image8 },
+    { name: "Pancakes & scrambled eggs", price: "₦3,500", img: image10 },
   ],
   snacks: [
     { name: "Chicken burger", price: "₦4,500", img: image3 },
@@ -62,9 +65,9 @@ import image45 from "../assets/image45.jpg"
     { name: "Peanuts", price: "₦3,550", img: image35 },
   ],
   sides: [
-    { name: "Creamy coleslaw", price: "₦3,500", img: image18 },
-    { name: "2 litre veg. salad", price: "₦3,500", img: image20 },
-    { name: "Mixed veggies", price: "₦8,500", img: image4 },
+    { name: "Creamy coleslaw", price: "₦1,500", img: image18 },
+    { name: "2 litre veg. salad", price: "₦30,000", img: image20 },
+    { name: "Mixed veggies", price: "₦7,500", img: image4 },
     // { name: "Bread sandwich", price: "₦5,500", img: image15 },
   ]
  };
