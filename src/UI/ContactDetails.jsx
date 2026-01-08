@@ -55,7 +55,7 @@ export default function ContactDetails() {
                 <div>
                   <p className="font-medium text-gray-900">Location</p>
                   <p className="text-gray-600">
-                    Old Ife Road, Ibadan
+                    Plot 7, Suite 33, In God We Trust Plaza, Sawmill, Old Ife Road, Ibadan.
                   </p>
                 </div>
               </div>

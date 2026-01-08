@@ -22,7 +22,7 @@ import image20 from "../assets/image20.jpg"
 import image35 from "../assets/image35.jpg"
 import image36 from "../assets/image36.jpg"
 // import image37 from "../assets/image37.jpg"
-// import image38 from "../assets/image38.jpg"
+import image38 from "../assets/image38.jpg"
 import image39 from "../assets/image39.jpg"
 // import image40 from "../assets/image40.jpg"
 import image41 from "../assets/image41.jpg"
@@ -37,6 +37,7 @@ import image45 from "../assets/image45.jpg"
     { name: "Ewa agoin", price: "₦5,000", img: image13 },
     { name: "Moi-moi", price: "₦1,000", img: image9 },
     { name: "Portion of edikaikong soup", price: "₦1,500", img: image11 },
+    { name: "1pc peppered fish", price: "₦2,500", img: image38 },
     { name: "Akara, pap, milk & sugar", price: "₦3,000", img: image36 },
     { name: "Beef stew", price: "₦1,000", img: image44 },
     { name: "Portion of egusi soup", price: "₦1,000", img: image45 },
@@ -44,6 +45,7 @@ import image45 from "../assets/image45.jpg"
     { name: "A wrap of pounded yam", price: "₦1,000", img: image41 },
     { name: "Ponmo stew", price: "₦1,000", img: image44 },
     { name: "Akara, oats, milk & sugar", price: "₦3,500", img: image36 },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image38 },
     
   ],
   continental: [
@@ -67,7 +69,7 @@ import image45 from "../assets/image45.jpg"
   ],
   sides: [
     { name: "Creamy coleslaw", price: "₦1,500", img: image18 },
-    { name: "2 litre veg. salad", price: "₦30,000", img: image20 },
+    { name: "2 litre platter of veg. salad", price: "₦30,000", img: image20 },
     { name: "Mixed veggies", price: "₦7,500", img: image4 },
     // { name: "Bread sandwich", price: "₦5,500", img: image15 },
   ]
@@ -119,7 +121,7 @@ export default function MenuPage() {
                 <h4 className="font-medium text-amber-800">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
-                  Order Now
+                  View Details
                 </button>
               </div>
             </div>
@@ -139,7 +141,7 @@ export default function MenuPage() {
                 <h4 className="font-medium text-amber-800">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
-                  Order Now
+                  View Details
                 </button>
               </div>
             </div>
@@ -166,7 +168,7 @@ export default function MenuPage() {
                 <h4 className="font-medium text-amber-900">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
-                  Order Now
+                  View Details
                 </button>
               </div>
              </div>
@@ -192,7 +194,7 @@ export default function MenuPage() {
                 <h4 className="font-medium text-amber-900">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
                 <button className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
-                  Order Now
+                  View Details
                 </button>
               </div>
              </div>
