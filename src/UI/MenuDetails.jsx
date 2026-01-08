@@ -19,8 +19,17 @@ import image16 from "../assets/image16.jpg"
 import image17 from "../assets/image17.jpg"
 import image18 from "../assets/image18.jpg"
 import image20 from "../assets/image20.jpg"
-import image36 from "../assets/image36.jpg"
 import image35 from "../assets/image35.jpg"
+import image36 from "../assets/image36.jpg"
+import image37 from "../assets/image37.jpg"
+import image38 from "../assets/image38.jpg"
+import image39 from "../assets/image39.jpg"
+import image40 from "../assets/image40.jpg"
+import image41 from "../assets/image41.jpg"
+import image42 from "../assets/image42.jpg"
+import image43 from "../assets/image43.jpg"
+import image44 from "../assets/image44.jpg"
+import image45 from "../assets/image45.jpg"
 
  const foods = {
   native: [
@@ -29,6 +38,10 @@ import image35 from "../assets/image35.jpg"
     { name: "Moi-moi", price: "₦1,000", img: image9 },
     { name: "Edikaikong soup", price: "₦30,000", img: image11 },
     { name: "Akara, pap & milk", price: "₦3,500", img: image36 },
+    { name: "Beef, fish Stew", price: "₦3,500", img: image44 },
+    { name: "Egusi soup", price: "₦3,500", img: image45 },
+    { name: "Okra soup", price: "₦3,500", img: image39 },
+    { name: "Pounded yam", price: "₦3,500", img: image41 },
     
   ],
   continental: [
