@@ -149,7 +149,7 @@ export default function ContactDetails() {
             Prefer instant response?
           </p>
           <a
-            href="https://wa.me/2348065292598"
+            href="https://wa.me/2348030769110?text=Hey%20Bakehouse%20Foods%2C%20Got%20treats%20in%20mind%2C%20Tell%20me%20more!"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-900 text-white text-base px-8 py-1.5 rounded-full hover:bg-gray-800 transition"

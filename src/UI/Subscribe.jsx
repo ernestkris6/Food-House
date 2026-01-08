@@ -1,5 +1,6 @@
 import React from "react";
 import { useRevealOnScroll } from "../Hooks/useRevealOnScroll";
+import { Link } from "react-router-dom";
 
 //bg-[#F5EFE6]
 
@@ -25,12 +26,14 @@ const { ref, isVisible } = useRevealOnScroll();
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 rounded-full bg-black text-white hover:opacity-90 transition-all duration-500 cursor-pointer">
+            <Link  to='menu'>
+            <p className="px-8 py-3 rounded-full border border-black/80 bg-black text-white transition-all duration-500 cursor-pointer" onClick={()=> scrollTo(0,0)}>
               Order Now
-            </button>
-            <button className="px-8 py-3 rounded-full border border-black/80 hover:bg-black hover:text-white transition-all duration-500 cursor-pointer">
+            </p>
+            </Link>
+            <a className="px-8 py-3 rounded-full border border-black/80 hover:bg-black hover:text-white transition-all duration-500 cursor-pointer" href="https://wa.me/2348030769110?text=Hey%20Bakehouse%20Foods%2C%20Got%20treats%20in%20mind%2C%20Tell%20me%20more!" target="_blank" rel="noopener noreferrer">
               Chat on WhatsApp
-            </button>
+            </a>
           </div>
         </div>
       </div>

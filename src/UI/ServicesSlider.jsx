@@ -213,9 +213,11 @@ export default function ServicesDetails() {
                     Premium quality, hygienic preparation, and stunning presentation.
                   </p>
 
-                  <button className="mt-5 bg-amber-500 hover:bg-amber-400 transition text-black font-medium px-8 py-2 rounded-full text-base">
+                  <a href="https://wa.me/2348030769110?text=Hey%20Bakehouse%20Foods%2C%20Got%20treats%20in%20mind%2C%20Tell%20me%20more!" target="_blank" rel="noopener noreferrer">
+                  <button className="mt-5 bg-amber-500 hover:bg-amber-400 transition text-black font-medium px-8 py-2 rounded-full cursor-pointer text-base">
                     Book Now
                   </button>
+                  </a>
                 </div>
 
               </div>
