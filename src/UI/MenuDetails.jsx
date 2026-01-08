@@ -41,7 +41,7 @@ import image45 from "../assets/image45.jpg"
     { name: "Beef stew", price: "₦1,000", img: image44 },
     { name: "Portion of egusi soup", price: "₦1,000", img: image45 },
     { name: "Portion of okra soup", price: "₦1,000", img: image39 },
-    { name: "A wrap of poundedyam", price: "₦1,000", img: image41 },
+    { name: "A wrap of pounded yam", price: "₦1,000", img: image41 },
     { name: "Ponmo stew", price: "₦1,000", img: image44 },
     { name: "Akara, oats, milk & sugar", price: "₦3,500", img: image36 },
     
@@ -49,19 +49,20 @@ import image45 from "../assets/image45.jpg"
   continental: [
     { name: "Portion of basmati jollof rice", price: "₦1,000", img: image17 },
     { name: "Stir-fry pasta with beef", price: "₦5,000", img: image12 },
-    { name: "Yamarita, mushrooms veggies & sauce", price: "₦5,500", img: image5 },
+    { name: "Yamarita, mushrooms veggies & sauce", price: "₦5,000", img: image5 },
     { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16 },
-    { name: "Portion of basmati fried rice", price: "₦4,000", img: image17 },
+    { name: "Portion of basmati fried rice", price: "₦1,000", img: image17 },
     { name: "Plate of basmati white rice,stew & egg", price: "₦4,000", img: image19 },
     { name: "Beef stick meats", price: "₦2,000", img: image8 },
     { name: "Pancakes & scrambled eggs", price: "₦3,500", img: image10 },
+    { name: "Chicken burger", price: "₦3,500", img: image3 },
+    
   ],
   snacks: [
-    { name: "Chicken burger", price: "₦4,500", img: image3 },
-    { name: "Sharwama", price: "₦3,500", img: image7 },
+    { name: "Sharwama", price: "₦3,000", img: image7 },
     { name: "Meat Pie", price: "₦1,000", img: image6 },
-    { name: "Small chops", price: "₦4,500", img: image14 },
-    { name: "Bread sandwich", price: "₦5,500", img: image15 },
+    { name: "Small chops in skewers", price: "₦2,000", img: image14 },
+    { name: "Bread sandwich & tea", price: "₦4,500", img: image15 },
     { name: "Peanuts", price: "₦3,550", img: image35 },
   ],
   sides: [
