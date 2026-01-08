@@ -54,7 +54,7 @@ export default function MenuPage() {
                 <h4 className="font-medium text-amber-800">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
                 <button 
-                  onClick={() => {scrollTo(0,0), navigate(`/menu/native/${slugify(item.name)}`)}} 
+                  onClick={() => {navigate(`/menu/native/${slugify(item.name)}`)}} 
                   className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
                   View Details
                 </button>
@@ -77,7 +77,7 @@ export default function MenuPage() {
                 <h4 className="font-medium text-amber-800">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
                 <button 
-                  onClick={() => {scrollTo(0,0), navigate(`/menu/continental/${slugify(item.name)}`)}} 
+                  onClick={() => {navigate(`/menu/continental/${slugify(item.name)}`)}} 
                   className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
                   View Details
                 </button>
@@ -105,7 +105,7 @@ export default function MenuPage() {
                <div className="p-3">
                 <h4 className="font-medium text-amber-900">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
-                <button onClick={() => {scrollTo(0,0), navigate(`/menu/sides/${slugify(item.name)}`)}}
+                <button onClick={() => {navigate(`/menu/sides/${slugify(item.name)}`)}}
                         className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
                   View Details
                 </button>
@@ -133,7 +133,7 @@ export default function MenuPage() {
                <div className="p-3">
                 <h4 className="font-medium text-amber-900">{item.name}</h4>
                 <p className="text-sm text-gray-600">{item.price}</p>
-                <button onClick={() => {scrollTo(0,0), navigate(`/menu/snacks/${slugify(item.name)}`)}} 
+                <button onClick={() => {navigate(`/menu/snacks/${slugify(item.name)}`)}} 
                         className="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded cursor-pointer">
                   View Details
                 </button>
