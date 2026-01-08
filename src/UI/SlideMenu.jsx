@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import image12 from '../assets/image12.jpg'
 import image13 from '../assets/image13.jpg'
 import image7 from '../assets/image7.jpg'
@@ -13,7 +14,7 @@ const slide = [
         img: image12,
         alt: "",
         desc: "Continental dishes",
-        price: "₦7,000",
+        price: "₦5,000",
     },
     {
         id: 1,
@@ -27,7 +28,7 @@ const slide = [
         img: image7,
         alt: "",
         desc: "Snacks",
-        price: "₦3,500",
+        price: "₦3,000",
 
     },
     {
@@ -35,21 +36,21 @@ const slide = [
         img: image15,
         alt: "",
         desc: "Brekfast",
-        price: "₦5,500",
+        price: "₦4,500",
     },
     {
         id: 4,
         img: image16,
         alt: "",
         desc: "Waffles",
-        price: "₦7,000",
+        price: "₦6,000",
     },
     {
         id: 5,
         img: image17,
         alt: "",
-        desc: "Continental rice",
-        price: "₦30,000",
+        desc: "1 Portion basmati rice",
+        price: "₦1,000",
     }
 ]
 
@@ -79,8 +80,10 @@ export default function SlideMenu() {
             <p className="rounded-b-2xl pl-4 text-black/90">
               {item.price}
             </p>
-            <div className='px-4'>
-              <button className='w-full text-white/90 rounded bg-amber-600 hover:bg-amber-600/80 mb-4 py-2 cursor-pointer'>Order Now</button>
+            <div className='px-4' onClick={() => scrollTo(0,0)}>
+              <Link to='menu'>
+                <button className='w-full text-white/90 rounded bg-amber-600 hover:bg-amber-600/80 mb-4 py-2 cursor-pointer'>Order Now</button>
+              </Link>
             </div>
            </div>
           </div>

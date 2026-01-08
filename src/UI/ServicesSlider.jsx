@@ -1,131 +1,8 @@
-
-// import { useEffect, useRef, useState } from "react";
-
-// const services = [
-//   { title: "Native Meals", image: "/images/native.jpg" },
-//   { title: "Continental Dishes", image: "/images/continental.jpg" },
-//   { title: "Side Dishes", image: "/images/sides.jpg" },
-//   { title: "Food Trays", image: "/images/trays.jpg" },
-//   { title: "Food in Bowls", image: "/images/bowls.jpg" },
-//   { title: "Food in Boxes", image: "/images/boxes.jpg" },
-//   { title: "Snacks & Confectionery", image: "/images/snacks.jpg" },
-//   { title: "Corporate & Events Catering", image: "/images/events.jpg" },
-// ];
-
-// export default function ServicesSlider() {
-//   const sliderRef = useRef(null);
-//   const [index, setIndex] = useState(0);
-
-//   // Auto-play
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setIndex((prev) => (prev + 1) % services.length);
-//     }, 4000);
-
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   // Scroll effect
-//   useEffect(() => {
-//     if (sliderRef.current) {
-//       sliderRef.current.scrollTo({
-//         left: sliderRef.current.clientWidth * index,
-//         behavior: "smooth",
-//       });
-//     }
-//   }, [index]);
-
-//   return (
-//     <section className="">
-//       <div className="max-w-7xl mx-auto px-6">
-
-//         {/* Header */}
-//         <div className="text-center mb-12">
-//           <h2 className="text-3xl md:text-4xl font-semibold">
-//             Our Services
-//           </h2>
-//           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-//             Premium meals and professional catering for every occasion.
-//           </p>
-//         </div>
-
-//         {/* Slider */}
-//         <div
-//           ref={sliderRef}
-//           className="flex overflow-x-hidden scroll-smooth"
-//         >
-//           {services.map((service, i) => (
-//             <div
-//               key={i}
-//               className="min-w-full px-4"
-//             >
-//               <div className="group relative h-[420px] rounded-3xl overflow-hidden shadow-lg">
-//                 <img
-//                   src={service.image}
-//                   alt={service.title}
-//                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-//                 />
-
-//                 {/* Overlay */}
-//                 <div className="absolute inset-0 bg-black/40" />
-
-//                 {/* Content */}
-//                 <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
-//                   <h3 className="text-2xl md:text-3xl font-semibold">
-//                     {service.title}
-//                   </h3>
-
-//                   <button className="mt-4 w-fit bg-amber-500 hover:bg-amber-400 transition px-6 py-3 rounded-full text-sm font-medium">
-//                     Book Now
-//                   </button>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Pagination Dots */}
-//         <div className="flex justify-center gap-3 mt-8">
-//           {services.map((_, i) => (
-//             <button
-//               key={i}
-//               onClick={() => setIndex(i)}
-//               className={`w-3 h-3 rounded-full transition ${
-//                 index === i
-//                   ? "bg-amber-500 scale-110"
-//                   : "bg-gray-300"
-//               }`}
-//             />
-//           ))}
-//         </div>
-
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { useEffect, useRef, useState } from "react";
 import image1 from '../assets/image1.jpg'
-import image2 from '../assets/image2.jpg'
-import image3 from '../assets/image3.jpg'
-import image4 from '../assets/image4.jpg'
+import image52 from '../assets/image52.jpg'
+import image48 from '../assets/image48.jpg'
+import image47 from '../assets/image47.jpg'
 // import image5 from '../assets/image5.jpg'
 // import image6 from '../assets/image6.jpg'
 // import image7 from '../assets/image7.jpg'
@@ -134,9 +11,9 @@ import image4 from '../assets/image4.jpg'
 
 const services = [
   { name: "Native Meals", image: image1 },
-  { name: "Continental Dishes", image: image2 },
-  { name: "Side Dishes", image: image3 },
-  { name: "Food Trays", image: image4 },
+  { name: "Continental Dishes", image: image52 },
+  { name: "Side Dishes", image: image48 },
+  { name: "Food Trays", image: image47 },
   // { name: "Food in Bowls", image: image5 },
   // { name: "Food in Boxes", image: image6 },
   // { name: "Snacks & Confectionery", image: image7 },

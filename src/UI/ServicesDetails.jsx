@@ -1,22 +1,22 @@
 import React from "react";
-import { FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router-dom"
+import { FaArrowLeft } from "react-icons/fa"
 import image31 from '../assets/image31.jpg'
 import image2 from '../assets/image2.jpg'
-import image33 from '../assets/image33.jpg'
-import image5 from '../assets/image5.jpg'
+import image21 from '../assets/image21.jpg'
 import image6 from '../assets/image6.jpg'
-import image16 from '../assets/image16.jpg'
 import image18 from '../assets/image18.jpg'
 import image15 from '../assets/image15.jpg'
-import { Link } from "react-router-dom";
+import image46 from '../assets/image46.jpg'
+import image50 from '../assets/image50.jpg'
 
 
 const services = [
   { name: "Native Meals", image: image2 },
-  { name: "Food Trays", image: image33 },
-  { name: "Continental Dishes", image: image16 },
+  { name: "Food Trays", image: image46 },
+  { name: "Intercontinental Dishes", image: image21 },
   { name: "Side Dishes", image: image18 },
-  { name: "Food in Bowls & Boxes", image: image5 },
+  { name: "Food in Bowls & Boxes", image: image50 },
   { name: "Snacks & Confectionery", image: image6 },
   { name: "Breakfast", image: image15 },
   { name: "Corporate & Event Catering", image: image31 },
