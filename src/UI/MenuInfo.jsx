@@ -56,7 +56,7 @@ export default function MenuInfo() {
             Order on WhatsApp</a>
 
 
-        <button onClick={()=> navigate(-1)} className="inline-block mt-6 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition" >Go Back</button>
+        <button onClick={()=> navigate(-1)} className="inline-block mt-6 bg-gray-900 text-white px-6 py-3 rounded-lg cursor-pointer hover:bg-gray-800 transition" >Go Back</button>
         </div>
       </div>
     </section>

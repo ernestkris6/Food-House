@@ -50,7 +50,7 @@ export const foods = {
   ],
   continental: [
     { name: "Portion of basmati jollof rice", price: "₦1,000", img: image17, desc: "" },
-    { name: "Stir-fry pasta with beef", price: "₦5,000", img: image12, desc: "Succulent beef strips and crunchy greens over flame kissed in signature gaze" },
+    { name: "Stir-fry pasta with beef", price: "₦5,000", img: image12, desc: "Succulent beef strips and crunchy greens over flame kissed in signature glaze" },
     { name: "Yamarita, mushrooms veggies & sauce", price: "₦5,000", img: image5, desc: "Golden yamarita served with mushrooms, fresh veggies and flavourful source." },
     { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16, desc: "" },
     { name: "Portion of basmati fried rice", price: "₦1,000", img: image17, desc: "" },
@@ -68,8 +68,8 @@ export const foods = {
     { name: "Peanuts", price: "₦3,550", img: image35, desc: "" },
   ],
   sides: [
-    { name: "Creamy coleslaw", price: "₦1,500", img: image18, desc: "Refreshing chilled cruch to perfectly balance our bold and spicy flavours." },
-    { name: "2 litre platter of veg. salad", price: "₦30,000", img: image20, desc: "" },
+    { name: "Creamy coleslaw", price: "₦1,500", img: image18, desc: "Refreshingly chilled crunch to perfectly balanced taste." },
+    { name: "2 litre platter of veg. salad", price: "₦30,000", img: image20, desc: "Freshly prepared with 10 premium ingredients." },
     { name: "Mixed veggies", price: "₦7,500", img: image4, desc: "" },
     // { name: "Bread sandwich", price: "₦5,500", img: image15 },
   ]
