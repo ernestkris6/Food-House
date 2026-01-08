@@ -34,7 +34,7 @@ import image45 from "../assets/image45.jpg"
  const foods = {
   native: [
     { name: "Portion of efo-riro", price: "₦1,000", img: image2 },
-    { name: "Ewa agoin", price: "₦5,000", img: image13 },
+    { name: "Plate of ewa agoyin", price: "₦5,000", img: image13 },
     { name: "Moi-moi", price: "₦1,000", img: image9 },
     { name: "Portion of edikaikong soup", price: "₦1,500", img: image11 },
     { name: "1pc peppered fish", price: "₦2,500", img: image38 },
@@ -100,7 +100,7 @@ export default function MenuPage() {
       {/* Stick Nav for Sections */}
       <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semibold">
         <a href="#native" className="hover:text-amber-700">Native</a>
-        <a href="#continental" className="hover:text-amber-700">Continental</a>
+        <a href="#continental" className="hover:text-amber-700">Intercontinental</a>
         <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
         {/* <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a> */}
         <a href="#snacks" className="hover:text-amber-700">Snacks</a>
@@ -131,7 +131,7 @@ export default function MenuPage() {
 
        <section id="continental" className="py-14 px-6 bg-amber-100">
         <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-6">
-          Continental Dishes
+          Intercontinental Dishes
         </h2>
         <div className="flex gap-2 md:gap-4 overflow-x-scroll overflow-hidden snap-x">
           {foods.continental.map((item) => (

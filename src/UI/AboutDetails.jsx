@@ -13,12 +13,12 @@ export default function AboutDetails() {
               
     },
     {
-      header: "Continental Dishes",
+      header: "Intercontinental Dishes",
       body: "Each dish is thoughtfully prepared to give you a refined dining experience that feels both indulgent and comforting.",              
     },
     {
       header: "Food Trays & Bowls",
-      body: "every tray is neatly arranged and generously portioned for sharing, meetings and all kinds of events.",
+      body: "Every tray is neatly arranged and generously portioned for sharing, meetings and all kinds of events.",
               
     },
     {
@@ -56,7 +56,7 @@ export default function AboutDetails() {
           alt="About us"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/30" />
 
         <div className="relative text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-medium leading-tight">
