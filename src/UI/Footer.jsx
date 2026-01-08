@@ -65,7 +65,7 @@ export default function Footer() {
                   Email: bakehousefoods.confectionery@gmail.com
                 </a>
               </li>
-              <li>Location: Bodija, Ibadan.</li>
+              <li>Location: Old Ife Road, Ibadan.</li>
             </ul>
 
             {/* Social Icons */}

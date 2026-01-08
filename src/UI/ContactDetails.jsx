@@ -2,6 +2,7 @@ import { FiMapPin, FiMail, FiPhone,FiInstagram, FiFacebook, FiLinkedin } from "r
 
 
 export default function ContactDetails() {
+  
   return (
     <section className="bg-[#fafafa] py-12">
       <div className="max-w-7xl mx-auto px-6">
@@ -54,7 +55,7 @@ export default function ContactDetails() {
                 <div>
                   <p className="font-medium text-gray-900">Location</p>
                   <p className="text-gray-600">
-                    Bodija, Ibadan, Nigeria
+                    Old Ife Road, Ibadan
                   </p>
                 </div>
               </div>

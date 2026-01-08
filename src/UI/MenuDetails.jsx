@@ -2,6 +2,7 @@ import React from "react";
 import image33 from "../assets/image33.jpg"
 import image2 from "../assets/image2.jpg"
 import image3 from "../assets/image3.jpg"
+import image4 from "../assets/image4.jpg"
 import image5 from "../assets/image5.jpg"
 import image6 from "../assets/image6.jpg"
 import image7 from "../assets/image7.jpg"
@@ -16,7 +17,9 @@ import image14 from "../assets/image14.jpg"
 import image15 from "../assets/image15.jpg"
 import image16 from "../assets/image16.jpg"
 import image17 from "../assets/image17.jpg"
-import image34 from "../assets/image34.jpg"
+import image18 from "../assets/image18.jpg"
+import image20 from "../assets/image20.jpg"
+import image36 from "../assets/image36.jpg"
 import image35 from "../assets/image35.jpg"
 
  const foods = {
@@ -25,7 +28,7 @@ import image35 from "../assets/image35.jpg"
     { name: "Ewa agoin", price: "₦5,000", img: image13 },
     { name: "Moi-moi", price: "₦1,000", img: image9 },
     { name: "Edikaikong soup", price: "₦30,000", img: image11 },
-    { name: "Akara, pap & milk", price: "₦3,500", img: image34 },
+    { name: "Akara, pap & milk", price: "₦3,500", img: image36 },
     
   ],
   continental: [
@@ -46,9 +49,9 @@ import image35 from "../assets/image35.jpg"
     { name: "Peanuts", price: "₦3,550", img: image35 },
   ],
   sides: [
-    { name: "Creamy coleslaw", price: "₦3,500", img: image14 },
-    { name: "2 litre veg. salad", price: "₦3,500", img: image9 },
-    { name: "Mixed veggies", price: "₦8,500", img: image6 },
+    { name: "Creamy coleslaw", price: "₦3,500", img: image18 },
+    { name: "2 litre veg. salad", price: "₦3,500", img: image20 },
+    { name: "Mixed veggies", price: "₦8,500", img: image4 },
     // { name: "Bread sandwich", price: "₦5,500", img: image15 },
   ]
  };
