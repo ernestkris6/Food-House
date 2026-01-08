@@ -64,7 +64,7 @@ export default function ContactDetails() {
                 
                 <div className="flex items-center gap-4">
                     <a
-                        href="https://instagram.com/yourusername"
+                        href="https://www.instagram.com/bakehouse_foods?utm_source=qr"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 rounded-full border border-gray-300 hover:bg-amber-500 hover:text-white transition"

@@ -71,7 +71,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="mt-5 flex gap-4">
               <a
-                href="https://www.instagram.com/glamby_lasauce"
+                href="https://www.instagram.com/bakehouse_foods?utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full border border-black/20 hover:bg-black hover:text-white transition"
