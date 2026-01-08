@@ -65,7 +65,7 @@ export default function Footer() {
                   Email: bakehousefoods.confectionery@gmail.com
                 </a>
               </li>
-              <li>Location: Old Ife Road, Ibadan.</li>
+              <li>Location:+7 Suite 33 In God We Trust Plaza, Sawmill, Old Ife Road, Ibadan.</li>
             </ul>
 
             {/* Social Icons */}
