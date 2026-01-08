@@ -39,7 +39,7 @@ export default function MenuInfo() {
       <img
         src={food.img}
         alt={food.name}
-        className="w-full h-[360px] md:w-full md:h-[320px] object-cover rounded-2xl shadow"
+        className="w-full h-[360px] md:w-full md:h-[320px] object-cover rounded-2xl shadow-2xl"
       />
 
       <div>
@@ -51,12 +51,10 @@ export default function MenuInfo() {
         </p>
 
         <div className="flex gap-2">
-          <a
-          href={`https://wa.me/2348030769110?text=Hi%2C%20I%20want%20to%20order%20${encodeURIComponent(food.name)}`}
-          className="inline-block mt-6 bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600/80 transition"
-        >
-          Order on WhatsApp
-        </a>
+          <a href={`https://wa.me/2348030769110?text=Hi%2C%20I%20want%20to%20order%20${encodeURIComponent(food.name)}`}
+          className="inline-block mt-6 bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600/80 transition" target="_blank" rel="noopener noreferrer">
+            Order on WhatsApp</a>
+
 
         <button onClick={()=> navigate(-1)} className="inline-block mt-6 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition" >Go Back</button>
         </div>
