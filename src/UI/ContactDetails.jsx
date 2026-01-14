@@ -1,4 +1,5 @@
 import { FiMapPin, FiMail, FiPhone,FiInstagram, FiFacebook, FiLinkedin } from "react-icons/fi";
+import ContactForm from "./ContactForm";
 
 
 export default function ContactDetails() {
@@ -96,8 +97,10 @@ export default function ContactDetails() {
           
 
           {/* Contact Form */}
+  
           <div className="bg-white rounded-2xl shadow-lg mt-8 md:mt-0 p-6">
-            <form className="space-y-3">
+            <ContactForm />
+            {/* <form className="space-y-3">
               <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Full Name
@@ -138,7 +141,7 @@ export default function ContactDetails() {
               >
                 Send Message
               </button>
-            </form>
+            </form> */}
           </div>
 
         </div>
