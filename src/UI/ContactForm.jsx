@@ -85,7 +85,7 @@ export default function ContactForm() {
             className="mt-1 w-full rounded-lg border px-4 py-1 focus:border-amber-500 outline-none"
             placeholder="Tell us how we can help..."
           />
-          <ValidationError style={{color: 'red'}} prefix="Message" field="message" errors={state.errors} />
+          <ValidationError style={{color: 'red', fontSize: '10px'}} prefix="Message" field="message" errors={state.errors} />
         </div>
 
         <button
