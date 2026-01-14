@@ -7,6 +7,7 @@ export default function ContactForm() {
   const [toast, setToast] = useState(null);
   const formRef = useRef(null);
 
+  // ✅ Success handler
   useEffect(() => {
   if (state.succeeded) {
     setToast({
@@ -15,13 +16,12 @@ export default function ContactForm() {
     });
 
   }
-  // Reset form
+  //Reset form
     formRef.current.reset();
     
 }, [state.succeeded]);
 
-
-  // ✅ Success handler
+// ❌ Error handler
   useEffect(() => {
     if (state.errors?.length && !state.submitting) {
       setToast({
