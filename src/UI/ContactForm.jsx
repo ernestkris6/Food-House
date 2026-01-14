@@ -91,7 +91,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="w-full bg-amber-500 hover:bg-amber-400 transition text-white py-2 rounded-lg flex items-center justify-center gap-2 disabled:opacity-70"
+          className="w-full bg-amber-500 hover:bg-amber-400 transition text-white py-2 rounded-lg flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
         >
           {state.submitting ? (
             <>
