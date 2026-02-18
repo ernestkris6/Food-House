@@ -1,10 +1,10 @@
 import React from 'react'
-import bake2 from '../assets/bake2.png';
+import log from '../assets/log.png';
 
 export default function Logo() {
   return (
     <div className='w-32 md:w-42 py-2'>
-        <img src={bake2} alt="" />
+        <img src={log} alt="" />
     </div>
   )
 }

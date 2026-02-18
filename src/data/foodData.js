@@ -11,7 +11,7 @@ import image9 from "../assets/image9.jpg"
 import image10 from "../assets/image10.jpg"
 import image11 from "../assets/image11.jpg"
 import image19 from "../assets/image19.jpg"
-import image13 from "../assets/image13.jpg"
+// import image13 from "../assets/image13.jpg"
 import image12 from "../assets/image12.jpg"
 import image14 from "../assets/image14.jpg"
 import image15 from "../assets/image15.jpg"
@@ -30,11 +30,19 @@ import image41 from "../assets/image41.jpg"
 // import image43 from "../assets/image43.jpg"
 import image44 from "../assets/image44.jpg"
 import image45 from "../assets/image45.jpg"
+import image61 from "../assets/image61.jpg"
+import image62 from "../assets/image62.jpg"
+import image63 from "../assets/image63.jpg"
+import image64 from "../assets/image64.jpg"
+import image65 from "../assets/image65.jpg"
+import image66 from "../assets/image66.jpg"
+import image67 from "../assets/image67.jpg"
+import image68 from "../assets/image68.jpg"
 
 export const foods = {
   native: [
     { name: "Portion of efo-riro", price: "₦1,000", img: image2, desc: "" },
-    { name: "Plate of ewa agoyin", price: "₦5,000", img: image13, desc: "" },
+    // { name: "Plate of ewa agoyin", price: "₦5,000", img: image13, desc: "" },
     { name: "Moi-moi", price: "₦1,000", img: image9, desc: "" },
     { name: "Portion of edikaikong soup", price: "₦1,500", img: image11, desc: ""  },
     { name: "1pc peppered fish", price: "₦2,500", img: image38, desc: "" },
@@ -45,8 +53,15 @@ export const foods = {
     { name: "A wrap of pounded yam", price: "₦1,000", img: image41, desc: "" },
     { name: "Ponmo stew", price: "₦1,000", img: image44, desc: "" },
     { name: "Akara, oats, milk & sugar", price: "₦3,500", img: image36, desc: "" },
-    { name: "1pc peppered chicken", price: "₦3,000", img: image38, desc: "" },
-    
+    { name: "1pc peppered chicken", price: "₦3,000", img: image61, desc: "" },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image62, desc: "" },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image63, desc: "" },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image64, desc: "" },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image65, desc: "" },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image66, desc: "" },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image67, desc: "" },
+    { name: "1pc peppered chicken", price: "₦3,000", img: image68, desc: "" },
+        
   ],
   continental: [
     { name: "Portion of basmati jollof rice", price: "₦1,000", img: image17, desc: "" },
