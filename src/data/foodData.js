@@ -52,14 +52,18 @@ import img09 from '../assets/img09.jpg'
 
 export const foods = {
   native: [
-    {name: 'food1', price:'₦22,500', img: img01, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
-    {name: 'food2', price:'₦22,500', img: img02, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
+    {name: 'food4', price:'₦5,500', img: img04, desc: '330ml of indulgent exotic oats parfait with akara diced liver'},
+    {name: 'food1', price:'₦5,000', img: img01, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
     {name: 'food3', price:'₦15,000', img: img03, desc: '3 sets of 500ml indulgent luxure pap parfaits comes with 3 packs of akara diced liver'},
-    {name: 'food4', price:'₦15,000', img: img04, desc: '330ml of indulgent exotic oats parfait with akara diced liver'},
     {name: 'food5', price:'₦15,000', img: img06, desc: '4 sets of indulgent luxure pap parfaits with 4 packs of akara diced liver'},
     {name: 'food6', price:'', img: img07, desc: '330ml of indulgent exotic oats with akara diced liver'},
     {name: 'food7', price:'', img: img08, desc: ''},
+    {name: 'food2', price:'₦22,500', img: img02, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
     {name: 'food8', price:'₦3,000', img: img09, desc: 'Indulgent loaf bread with akara diced liver'},
+    { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16, desc: "" },
+    { name: "Pancakes & scrambled eggs", price: "₦3,500", img: image10, desc: "" },
+
+
 
 
     // { name: "Portion of efo-riro", price: "₦1,000", img: image2, desc: "" },
@@ -88,25 +92,25 @@ export const foods = {
     // { name: "Portion of basmati jollof rice", price: "₦1,000", img: image17, desc: "" },
     // { name: "Stir-fry pasta with beef", price: "₦5,000", img: image12, desc: "Succulent beef strips and crunchy greens over flame kissed in signature glaze" },
     // { name: "Yamarita, mushrooms veggies & sauce", price: "₦5,000", img: image5, desc: "Golden yamarita served with mushrooms, fresh veggies and flavourful source." },
-    { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16, desc: "" },
+    // { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16, desc: "" },
     // { name: "Portion of basmati fried rice", price: "₦1,000", img: image17, desc: "" },
     // { name: "Plate of basmati white rice,stew & egg", price: "₦4,000", img: image19, desc: "" },
     // { name: "Stick beef meat", price: "₦2,000", img: image8, desc: "Zesty, pepper-rubbed beef medallion skewered and grilled to smoky perfection" },
-    { name: "Pancakes & scrambled eggs", price: "₦3,500", img: image10, desc: "" },
+    // { name: "Pancakes & scrambled eggs", price: "₦3,500", img: image10, desc: "" },
     // { name: "Chicken burger", price: "₦3,500", img: image3, desc: "" },
     
   ],
   snacks: [
-    { name: "Sharwama", price: "₦3,000", img: image7, desc: "" },
-    { name: "Meat Pie", price: "₦1,000", img: image6 },
-    { name: "Small chops in skewers", price: "₦2,000", img: image14, desc: "" },
-    { name: "Bread sandwich & tea", price: "₦4,500", img: image15, desc: "" },
-    { name: "Peanuts", price: "₦3,550", img: image35, desc: "" },
-  ],
-  sides: [
-    { name: "Creamy coleslaw", price: "₦1,500", img: image18, desc: "Refreshingly chilled crunch to perfectly balanced taste." },
-    { name: "2 litre platter of veg. salad", price: "₦30,000", img: image20, desc: "Freshly prepared with 10 premium ingredients." },
-    { name: "Mixed veggies", price: "₦7,500", img: image4, desc: "" },
+  //   { name: "Sharwama", price: "₦3,000", img: image7, desc: "" },
+  //   { name: "Meat Pie", price: "₦1,000", img: image6 },
+  //   { name: "Small chops in skewers", price: "₦2,000", img: image14, desc: "" },
+  //   { name: "Bread sandwich & tea", price: "₦4,500", img: image15, desc: "" },
+  //   { name: "Peanuts", price: "₦3,550", img: image35, desc: "" },
+  // ],
+  // sides: [
+  //   { name: "Creamy coleslaw", price: "₦1,500", img: image18, desc: "Refreshingly chilled crunch to perfectly balanced taste." },
+  //   { name: "2 litre platter of veg. salad", price: "₦30,000", img: image20, desc: "Freshly prepared with 10 premium ingredients." },
+  //   { name: "Mixed veggies", price: "₦7,500", img: image4, desc: "" },
     // { name: "Bread sandwich", price: "₦5,500", img: image15 },
   ]
  };
