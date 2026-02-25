@@ -43,7 +43,7 @@ export default function MenuPage() {
       {/* Native Meals - Grid */}
       <section className="py-14 px-5">
         <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-8">
-          Pap Parfaits
+          Breakfast Parfait
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">

@@ -45,23 +45,22 @@ import img02 from '../assets/img02.jpg'
 import img03 from '../assets/img03.jpg'
 import img04 from '../assets/img04.jpg'
 // import img05 from '../assets/img05.jpg'
-// import img06 from '../assets/img06.jpg'
-import img07 from '../assets/img07.jpg'
+import img06 from '../assets/img06.jpg'
+// import img07 from '../assets/img07.jpg'
 import img08 from '../assets/img08.jpg'
 import img09 from '../assets/img09.jpg'
 
 export const foods = {
   native: [
-    {name: 'Indulgent exotic oats parfait', price:'₦5,500', img: img04, desc: '330ml of indulgent exotic oats parfait with akara diced liver'},
-    {name: 'Indulgent luxure pap parfait', price:'₦5,000', img: img01, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
-    {name: 'Indulgent exotic oats parfait with Akara diced liver', price:'', img: img08, desc: ''},
-    {name: 'Indulgent luxure pap parfait', price:'₦15,000', img: img03, desc: '3 sets of 500ml indulgent luxure pap parfaits comes with 3 packs of akara diced liver'},
-    // {name: 'food5', price:'₦15,000', img: img06, desc: '4 sets of indulgent luxure pap parfaits with 4 packs of akara diced liver'},
-    {name: 'food6', price:'', img: img07, desc: '330ml of indulgent exotic oats with akara diced liver'},
-    {name: 'food2', price:'₦22,500', img: img02, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
-    {name: 'food8', price:'₦3,000', img: img09, desc: 'Indulgent loaf bread with akara diced liver'},
-    { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16, desc: "" },
-    { name: "Pancakes & scrambled eggs", price: "₦3,500", img: image10, desc: "" },
+    {name: '500ml Indulgent exotic oats parfait', price:'₦5,500', img: img04, desc: '500ml indulgent exotic oats parfait with Akara diced liver. This fibre fuity nutrient is what you need on mornings with a high dose of protein.'},
+    {name: '500ml Indulgent luxure pap parfait', price:'₦5,000', img: img01, desc: '500ml Indulgent luxure pap parfait with Akara diced liver. This creamy natural custard pap will fuel you with the right energy and supply all the nutrients your body needs.'},
+    {name: '330ml Indulgent exotic oats parfait', price:'₦4,000', img: img08, desc: '330ml Indulgent exotic oats parfait with Akara diced liver.'},
+    {name: '(3 bowls) 500ml Indulgent luxure pap parfait', price:'₦15,000', img: img03, desc: '3 bowls of 500ml of Indulgent luxure pap parfait with  3packs of Akara diced liver.'},
+    {name: '(4 bowls) 330ml Indulgent luxure pap parfait', price:'₦15,000', img: img06, desc: '4 bowls of 330ml of Indulgent luxure pap parfait with  4 packs of Akara diced liver.'},
+    {name: '9 cups of party-pack indulgent luxure', price:'₦20,250', img: img02, desc: '9 cups of indulgent luxure pap parfait with 9 packs of Akara diced liver'},
+    {name: 'Indulgent akara with loaf', price:'₦3,000', img: img09, desc: 'Indulgent loaf bread with Akara diced liver.'},
+    { name: "Waffles, egg & baked beans", price: "₦7,500", img: image16, desc: "" },
+    { name: "Pancakes & scrambled eggs", price: "₦5,000", img: image10, desc: "" },
 
 
 
