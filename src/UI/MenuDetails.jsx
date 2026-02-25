@@ -42,9 +42,9 @@ export default function MenuPage() {
 
       {/* Native Meals - Grid */}
       <section id="native" className="py-14 px-5">
-        <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-8">
+        {/* <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-8">
           Native Meals
-        </h2>
+        </h2> */}
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {foods.native.map((item) => (
@@ -89,7 +89,7 @@ export default function MenuPage() {
 
               {/* 3️⃣ Side Dishes  */}
         
-         <section id="sides" className="py-14 px-6 bg-white text-amber-900">
+         {/* <section id="sides" className="py-14 px-6 bg-white text-amber-900">
          <h2 className="text-xl md:text-2xl font-medium mb-6">
            Side Dishes
          </h2>
@@ -114,10 +114,10 @@ export default function MenuPage() {
              </div>
            ))}
          </div>
-       </section>
+       </section> */}
 
       {/* 5️⃣ Snacks — OVERLAY HOVER */}
-       <section id="snacks" className="py-14 px-6 bg-amber-100 text-white">
+       {/* <section id="snacks" className="py-14 px-6 bg-amber-100 text-white">
          <h2 className="text-xl md:text-2xl font-medium mb-6 text-amber-900">
            Snacks & Confectionery
          </h2>
@@ -141,7 +141,7 @@ export default function MenuPage() {
              </div>
            ))}
          </div>
-       </section>
+       </section> */}
      </div>
    );
  }
