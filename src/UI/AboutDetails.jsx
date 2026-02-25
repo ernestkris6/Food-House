@@ -39,7 +39,7 @@ export default function AboutDetails() {
     },
     {
       header: "Beautiful Presentation",
-      body: "We believe foods should delight the eyes before the first bite. Each dish is thoughtfully presented to add elegance, style, and a memorable touch to your event.",
+      body: "We believe food should delight the eyes before the first bite. Each dish is thoughtfully presented to add elegance, style, and a memorable touch to your event.",
               
     },
   
