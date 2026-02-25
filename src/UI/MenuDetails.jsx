@@ -32,19 +32,19 @@ export default function MenuPage() {
 
       {/* Stick Nav for Sections */}
       <div className="top-0 z-30 bg-white py-3 shadow-sm flex justify-center gap-4 text-[14px] font-semibold">
-        <a href="#native" className="hover:text-amber-700">Native</a>
+        <a href="#parfaits" className="hover:text-amber-700">Pap parfaits</a>
         <a href="#continental" className="hover:text-amber-700">Intercontinental</a>
-        <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
-        {/* <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a> */}
-        <a href="#snacks" className="hover:text-amber-700">Snacks</a>
+        {/* <a href="#sides" className="hover:text-amber-700">Side Dishes</a>
+        <a href="#snacks" className="hover:text-amber-700">Snacks & Confectionery</a>
+        <a href="#snacks" className="hover:text-amber-700">Snacks</a> */}
       </div>
 
 
       {/* Native Meals - Grid */}
-      <section id="native" className="py-14 px-5">
-        {/* <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-8">
-          Native Meals
-        </h2> */}
+      <section id="parfaits" className="py-14 px-5">
+        <h2 className="text-xl md:text-2xl font-medium text-amber-900 mb-8">
+          Pap Parfaits
+        </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {foods.native.map((item) => (
