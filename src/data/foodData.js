@@ -45,7 +45,7 @@ import img02 from '../assets/img02.jpg'
 import img03 from '../assets/img03.jpg'
 import img04 from '../assets/img04.jpg'
 // import img05 from '../assets/img05.jpg'
-import img06 from '../assets/img06.jpg'
+// import img06 from '../assets/img06.jpg'
 import img07 from '../assets/img07.jpg'
 import img08 from '../assets/img08.jpg'
 import img09 from '../assets/img09.jpg'
@@ -54,10 +54,10 @@ export const foods = {
   native: [
     {name: 'Indulgent exotic oats parfait', price:'₦5,500', img: img04, desc: '330ml of indulgent exotic oats parfait with akara diced liver'},
     {name: 'Indulgent luxure pap parfait', price:'₦5,000', img: img01, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
-    {name: 'food3', price:'₦15,000', img: img03, desc: '3 sets of 500ml indulgent luxure pap parfaits comes with 3 packs of akara diced liver'},
-    {name: 'food5', price:'₦15,000', img: img06, desc: '4 sets of indulgent luxure pap parfaits with 4 packs of akara diced liver'},
+    {name: 'Indulgent exotic oats parfait with Akara diced liver', price:'', img: img08, desc: ''},
+    {name: 'Indulgent luxure pap parfait', price:'₦15,000', img: img03, desc: '3 sets of 500ml indulgent luxure pap parfaits comes with 3 packs of akara diced liver'},
+    // {name: 'food5', price:'₦15,000', img: img06, desc: '4 sets of indulgent luxure pap parfaits with 4 packs of akara diced liver'},
     {name: 'food6', price:'', img: img07, desc: '330ml of indulgent exotic oats with akara diced liver'},
-    {name: 'food7', price:'', img: img08, desc: ''},
     {name: 'food2', price:'₦22,500', img: img02, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
     {name: 'food8', price:'₦3,000', img: img09, desc: 'Indulgent loaf bread with akara diced liver'},
     { name: "Waffles, egg & baked beans", price: "₦6,000", img: image16, desc: "" },
