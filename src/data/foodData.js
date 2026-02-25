@@ -52,8 +52,8 @@ import img09 from '../assets/img09.jpg'
 
 export const foods = {
   native: [
-    {name: 'food4', price:'₦5,500', img: img04, desc: '330ml of indulgent exotic oats parfait with akara diced liver'},
-    {name: 'food1', price:'₦5,000', img: img01, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
+    {name: 'Indulgent exotic oats parfait', price:'₦5,500', img: img04, desc: '330ml of indulgent exotic oats parfait with akara diced liver'},
+    {name: 'Indulgent luxure pap parfait', price:'₦5,000', img: img01, desc: '9 cups of indulgent luxure with 9 packs of Akara diced liver'},
     {name: 'food3', price:'₦15,000', img: img03, desc: '3 sets of 500ml indulgent luxure pap parfaits comes with 3 packs of akara diced liver'},
     {name: 'food5', price:'₦15,000', img: img06, desc: '4 sets of indulgent luxure pap parfaits with 4 packs of akara diced liver'},
     {name: 'food6', price:'', img: img07, desc: '330ml of indulgent exotic oats with akara diced liver'},
